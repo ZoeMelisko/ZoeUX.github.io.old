@@ -1,5 +1,6 @@
 $(window).ready(function() {
     $('.backToTop').hide();
+    $('.float-up').opacity(0);
 
     $(window).scroll(function() {
     const scroll = $(window).scrollTop();

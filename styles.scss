@@ -330,9 +330,11 @@ form {
 
 }
 
-
 //ANIMATIONS
 
+.float-up {
+  animation: move-and-fade 5s .5s infinite;
+}
  @keyframes move-and-fade {
      0%,
      100% {
