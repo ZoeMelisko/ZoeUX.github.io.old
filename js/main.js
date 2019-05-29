@@ -19,25 +19,25 @@ $(window).ready(function() {
 
 $('.float-up')
     .css('opacity', 0);
-
-document.addEventListener('scroll', () => {
-    var waypoint = new Waypoint({
-        element: document.getElementById('choisi-sec'),
-        handler: function() {
-            console.log('Scrolled to waypoint!');
-            anime({
-                targets: '.float-up',
-                translateY: [200, 0],
-                duration: 3000,
-                easing: "easeOutExpo",
-                opacity: [0, 1],
-                delay: 200
-            });
-            this.destroy();
-        },
-        offset: 'bottom-in-view',
-    })
-});
+//
+// document.addEventListener('scroll', () => {
+//     var waypoint = new Waypoint({
+//         element: document.getElementById('choisi-sec'),
+//         handler: function() {
+//             console.log('Scrolled to waypoint!');
+//             anime({
+//                 targets: '.float-up',
+//                 translateY: [200, 0],
+//                 duration: 3000,
+//                 easing: "easeOutExpo",
+//                 opacity: [0, 1],
+//                 delay: 200
+//             });
+//             this.destroy();
+//         },
+//         offset: 'bottom-in-view',
+//     })
+// });
 
 //
 // $('#choisi-sec')
