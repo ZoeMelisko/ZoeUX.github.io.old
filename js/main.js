@@ -25,31 +25,15 @@ $(window).ready(function() {
 //     var waypoint = new Waypoint({
 //         element: document.getElementById('choisi-sec'),
 //         handler: function() {
-//             console.log('Scrolled to waypoint!');
-//             anime({
-//                 targets: '.float-up',
-//                 translateY: [200, 0],
-//                 duration: 3000,
-//                 easing: "easeOutExpo",
-//                 opacity: [0, 1],
-//                 delay: 200
-//             });
 //             this.destroy();
 //         },
 //         offset: 'bottom-in-view',
 //     })
 // });
 
-//
-// $('#choisi-sec')
-//     .css('opacity', 0) // immediately hide element
-//     .waypoint(function(direction) {
-//         if (direction === 'down') {
-//             $(this.element).animate({ opacity: 1 })
-//         }
-//         else {
-//             $(this.element).animate({ opacity: 0 })
-//         }
-//     }, {
-//         offset: 'bottom-in-view'
-//     });
+$('#choisi-sec').waypoint(function() {
+    $('#choisi-sec').css({
+        animation: "move-and-fade 2s",
+        opacity: "1"
+    })
+});
