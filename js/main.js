@@ -1,6 +1,6 @@
 $(window).ready(function() {
     $('.backToTop').hide();
-    $('.float-up').opacity(0);
+    $('#choisi-sec').opacity(0);
 
     $(window).scroll(function() {
     const scroll = $(window).scrollTop();
@@ -34,6 +34,5 @@ $(window).ready(function() {
 $('#choisi-sec').waypoint(function() {
     $('#choisi-sec').css({
         animation: "move-and-fade 2s",
-        opacity: "1"
     })
 });
