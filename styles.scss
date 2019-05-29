@@ -333,16 +333,13 @@ form {
 //ANIMATIONS
 
  @keyframes move-and-fade {
-     0%,
+     0% {
+       opacity: 0;
+       transform: translateY(50px);
+     }
      100% {
-         opacity: 0;
+     opacity: 1;
      transform: translateY(0);
  }
-     50% {
-         opacity: 1;
- }
-     75% {
-         opacity: 0;
-    }
  }
 

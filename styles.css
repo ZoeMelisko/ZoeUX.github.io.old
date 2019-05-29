@@ -588,15 +588,13 @@ form textarea {
 }
 
 @keyframes move-and-fade {
-  0%, 100% {
+  0% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(50px);
   }
-  50% {
+  100% {
     opacity: 1;
-  }
-  75% {
-    opacity: 0;
+    transform: translateY(0);
   }
 }
 
