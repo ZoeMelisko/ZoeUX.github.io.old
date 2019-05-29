@@ -16,10 +16,10 @@ $(window).ready(function() {
         $('.work').fadeIn('dropdown-content')
     });
 });
-
-$('.float-up')
-    .css('opacity', 0);
 //
+// $('.float-up')
+//     .css('opacity', 0);
+// //
 // document.addEventListener('scroll', () => {
 //     var waypoint = new Waypoint({
 //         element: document.getElementById('choisi-sec'),
