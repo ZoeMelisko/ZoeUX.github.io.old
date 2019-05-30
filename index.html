@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 </head>
 
 <body>
@@ -26,42 +25,56 @@
           <ul class="dropdown">
             <li class="sub-menu"><a href="html/choisi.html">choisi</a></li>
             <li class="sub-menu"><a href="html/upcomer.html">upcomer</a></li>
-            <li class="sub-menu"><a href="html/burger%20records.html">burger records</a></li>
+            <li class="sub-menu"><a href="html/burger-records.html">burger records</a></li>
           </ul>
         </li>
         <li><a href="html/about.html">about</a></li>
         <li><a href="#">resume</a></li>
       </ul>
     </div>
+    <div id="shapes">
+      <img src="img/shapes/Asset%2077.svg" alt="" class="shape">
+      <img src="img/shapes/Asset%2078.svg" alt="" class="shape">
+      <img src="img/shapes/Asset%2079.svg" alt="" class="shape">
+      <img src="img/shapes/Asset%2080.svg" alt="" class="shape">
+      <img src="img/shapes/Asset%2081.svg" alt="" class="shape">
+      <img src="img/shapes/Asset%2082.svg" alt="" class="shape">
+    </div>
   </div>
   <div class="intro">
-    <h1>Hey I'm Zoë! A UX/UI Designer with a passion for people, an eye for design, & a knack for coding!</h1>
+    <div class="heart hide-mobile"></div>
+    <h1>Hey I'm Zoë! A UX/UI Designer with<br>
+      passion for people,<br>
+      an eye for design,<br>
+      & a knack for coding!</h1>
   </div>
 </header>
 <main>
-  <section class="caseStudy grid-2" id="choisi-sec">
-      <div class="caseStudy-des">
+  <section class="caseStudy grid-2 grid-1" id="choisi-sec">
+      <div class="choisi-des">
         <h1>Choisi</h1>
-        <h3>UX Design | Web Design | E-commerce</h3>
+        <h3>e-commerce Website Design</h3>
         <div><button class="primary-button">View Case Study</button></div>
       </div>
-      <div><img src="img/choisi-mockup.png" alt="choisi-mockup" class="float-up"></div>
+      <div><img src="img/choisi-mockup.png" alt="choisi-mockup" class="choisi-img"></div>
   </section>
-  <section class="caseStudy grid-2">
-    <div><img src="img/upcomer1.png" alt="upcomer-app-mockup" class="float-up"></div>
-    <div class="caseStudy-des">
+
+  <section class="caseStudy grid-2" id="upcomer-sec">
+    <div id="img-div"><img src="img/upcomer1.png" alt="upcomer-app-mockup" class="upcomer-img"></div>
+    <div class="upcomer-des">
       <h1>Upcomer</h1>
-      <h3>UX/UI Design | Mobile App IOS | Companion App</h3>
+      <h3>Companion App Design</h3>
       <div><button class="primary-button">View Case Study</button></div>
     </div>
   </section>
-  <section class="caseStudy grid-2" id="burgerRecords">
-    <div class="caseStudy-des">
+
+  <section class="caseStudy grid-2" id="burger-rec-sec">
+    <div class="brgr-rec-des">
       <h1>Burger Records</h1>
-      <h3>UX/UI Design | Web Design | E-commerce</h3>
+      <h3>Website Re-design</h3>
       <div class="btn-div"><button class="primary-button">View Case Study</button></div>
     </div>
-    <div><img src="img/burger-records-mockup.png" alt="burger-records-mockup" class="float-up"></div>
+    <div><img src="img/burger-records-mockup.png" alt="burger-records-mockup" class="brgr-rec-img"></div>
   </section>
   <div><a href="#"><button class="backToTop"><i class="fas fa-chevron-up fa-2x"></i></button></a></div>
 </main>
@@ -74,8 +87,6 @@
   </div>
   <div>Los Angeles, CA</div>
 </footer>
-<script src="js/anime.min.js"></script>
-
 <script
         src="js/jquery-1.12.0.min.js"
         integrity="sha256-Xxq2X+KtazgaGuA2cWR1v3jJsuMJUozyIXDB3e793L8="
