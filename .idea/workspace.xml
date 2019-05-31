@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93cbd428-a7b0-4c3a-bf4a-d7b7e0f775c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/anime.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Final Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Final Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_mobile-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_mobile-styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 100.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 101.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 102.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 103.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 104.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 105.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 106.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 107.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 108.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 77.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 78.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 79.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 80.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 81.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 82.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 83.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 84.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 85.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 86.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 87.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 88.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 89.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 90.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 91.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 92.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 93.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 94.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 95.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 96.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 97.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 98.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/shapes/Asset 99.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
@@ -68,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -77,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="302" column="40" selection-start-line="302" selection-start-column="40" selection-end-line="302" selection-end-column="40" />
+            <state relative-caret-position="451">
+              <caret line="369" column="36" selection-start-line="369" selection-start-column="36" selection-end-line="369" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -225,12 +187,12 @@
       <workItem from="1559012399616" duration="97000" />
       <workItem from="1559068973040" duration="13583000" />
       <workItem from="1559097192018" duration="1040000" />
-      <workItem from="1559102217064" duration="34650000" />
+      <workItem from="1559102217064" duration="35362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49394000" />
+    <option name="totallyTimeSpent" value="50106000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,6 +384,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="369" column="36" selection-start-line="369" selection-start-column="36" selection-end-line="369" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-507">
@@ -429,17 +398,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="302" column="40" selection-start-line="302" selection-start-column="40" selection-end-line="302" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
         </state>
       </provider>
     </entry>
