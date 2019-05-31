@@ -11,5 +11,6 @@
     <orderEntry type="library" name="inview" level="application" />
     <orderEntry type="library" name="waypoints.debug" level="application" />
     <orderEntry type="library" name="waypoints" level="application" />
+    <orderEntry type="library" name="scrollMonitor" level="application" />
   </component>
 </module>

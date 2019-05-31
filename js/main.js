@@ -8,7 +8,7 @@ $(window).ready(function() {
     var upcomerOffset = $('#upcomer-sec').offset().top;
     var brgrOffset = $('#burger-rec-sec').offset().top;
 
-    var shapeWrapper = document.getElementById('shape-wrapper');
+    var shapeWrapper = document.getElementById('shapes-wrap');
 
     if (shapeWrapper) {
         var textEffectWatcher1 = scrollMonitor.create( shapeWrapper );

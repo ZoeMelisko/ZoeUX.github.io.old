@@ -193,6 +193,10 @@ a {
 
   //MAIN CONTENT
 
+  .home-header {
+    z-index: 50;
+  }
+
   #img-div {
     width: 100%;
     margin: 70px;
@@ -278,7 +282,7 @@ a {
     align-content: center;
     justify-content: center;
     opacity: 0;
-    transform: translateX(5px) scale(.9);
+    transform: translateX(50px) scale(.9);
   }
 
   .upcomer-img {
@@ -287,7 +291,7 @@ a {
     align-content: center;
     justify-content: center;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(-50px) scale(.9);
   }
 
   .brgr-rec-img {
@@ -296,13 +300,13 @@ a {
     align-content: center;
     justify-content: center;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(50px) scale(.9);
   }
 
   .img-scrolled {
     opacity: 1;
     transform: none;
-    transition: opacity .75s ease-in, transform 2s ease-in;
+    transition: opacity .50s ease-in, transform 1s ease-in;
   }
 
 
@@ -505,6 +509,13 @@ form {
   }
 };
 
-.shape {
-  max-width: 50px;
+#shapes-wrap {
+  display: flex;
+  position: absolute;
+  top: 0;
+
+ }
+
+.home-header {
+  z-index: 50;
 }
