@@ -1,6 +1,6 @@
 $primary-color: #222222;
-$primary-font: "Montserrat", sans-sarif;
-$secondary-font: "Roboto", sans-sarif;
+$primary-font: "Roboto", sans-sarif;
+$secondary-font: "Montserrat", sans-sarif;
 $background-color: #f6f7f1;
 $responsive-img: 100%;
 $lower-case: lowercase;
@@ -56,7 +56,6 @@ $none: none;
     border: 2px solid black;
     padding: 10px;
     background-color: transparent;
-    margin-top: 150px;
   }
 
   //GRID LAYOUT
@@ -71,8 +70,6 @@ $none: none;
   .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 20px;
     text-align: center;
   }
 
@@ -92,51 +89,18 @@ $none: none;
   .container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
 
   .nav-wrapper {
+    display: flex;
     padding: 30px;
     position: fixed;
     z-index: 100;
     width: 100%;
 
     .primary-menus {
-      display: flex;
-      justify-content: center;
-      padding-top: 38px;
-      padding-inline-start: 0;
-
-      ul {
-        padding-inline-start: 0;
-      }
-
-      .sub-menu {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 10px;
-        width: 100%;
-      }
-
-      li {
-        list-style: none;
-        padding-left: 40px;
-        padding-right: 40px;
-        a {
-          transition: all 0.2s ease-in-out;
-          -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          &:hover {
-            font-weight: bold;
-            color: coral;
-          }
-        }
-      }
-    }
-    .menus-dropdown {
-      &:hover .dropdown {
-        visibility: visible;
-        opacity: 1;
-      }
+      display: none;
     }
 
     .dropdown {
@@ -165,3 +129,26 @@ $none: none;
     margin-left: 150px;
   }
 }
+
+.choisi-header {
+  height: 50vh;
+  position: relative;
+}
+
+.choisi-overview {
+  height: 50vh;
+  background-color: lightblue;
+  width: 100%;
+  position: relative;
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .primary-menus {
+    display: none;
+  }
+}
+

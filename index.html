@@ -10,17 +10,17 @@
   <link rel="logo-icon" href="img/logo.svg" type="image/x-icon" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="./choisi.html">
+  <link rel="stylesheet" href="//choisi.html">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </head>
 
 <body>
 <header class="home-header">
-<!--  <a href="#" class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></a>-->
-  <div class="nav-wrapper">
+  <div class="nav-wrapper hide-mobile">
     <div class="container">
       <div class="logo"><a href="index.html"><img src="./img/logo.svg" alt="logo"></a></div>
+      <div><a href="#" class="hamburger fa-2x"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
       <ul class="primary-menus">
         <li class="menus-dropdown">
           <a href="index.html">work</a>
@@ -35,25 +35,24 @@
       </ul>
     </div>
   </div>
-  <div class="intro">
-    <div class="heart hide-mobile"></div>
-    <h1>Hey I'm Zoë! A UX/UI Designer with<br>
-      passion for people,<br>
-      an eye for design,<br>
-      & a knack for coding!</h1>
+  <div class="intro grid-2">
+    <div class="center-content"><h1>Hey I'm Zoe, your friendly neighborhood UXicorn!</h1></div>
+    <div class="center-content"><img id="uxicorn" src="img/UXicorn.svg" alt=""></div>
   </div>
 </header>
 <main>
-  <section class="caseStudy grid-2 grid-1" id="choisi-sec">
+  <section class="caseStudy grid-2 mobile-grid-1" id="choisi-sec">
       <div class="choisi-des">
         <h1>Choisi</h1>
         <h3>e-commerce Website Design</h3>
         <div><a href="//choisi.html"><button class="primary-button">View Case Study</button></a></div>
       </div>
-      <div><img src="img/choisi-mockup.png" alt="choisi-mockup" class="choisi-img"></div>
+      <div>
+        <img src="img/choisi-mockup.png" alt="choisi-mockup" class="choisi-img">
+      </div>
   </section>
 
-  <section class="caseStudy grid-2" id="upcomer-sec">
+  <section class="caseStudy grid-2 mobile-grid-1" id="upcomer-sec">
     <div id="img-div"><img src="img/upcomer1.png" alt="upcomer-app-mockup" class="upcomer-img"></div>
     <div class="upcomer-des">
       <h1>Upcomer</h1>
@@ -62,7 +61,7 @@
     </div>
   </section>
 
-  <section class="caseStudy grid-2" id="burger-rec-sec">
+  <section class="caseStudy grid-2 mobile-grid-1" id="burger-rec-sec">
     <div class="brgr-rec-des">
       <h1>Burger Records</h1>
       <h3>Website Re-design</h3>
