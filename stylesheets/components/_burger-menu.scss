@@ -1,0 +1,78 @@
+//BURGER MENU STYLES//
+$line-color: black;
+$line-hover-color: black;
+$line-width: 2em;
+$line-spacing: 1em;
+$line-thickness: .1em;
+
+//BURGER ANIMATION RULES//
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($line-spacing / 2);
+$translateX: 0;
+
+///////BURGER MENU ANIMATION///////
+
+#burger {
+  width: $line-width;
+  height: $line-spacing;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: block;
+  z-index: 5000;
+
+  .line {
+    display: block;
+    background: $line-color;
+    width: $line-width;
+    height: $line-thickness;
+    position: absolute;
+    left: 0;
+    border-radius: ($line-thickness / 2);
+    transition: all $transition-time;
+
+    &.line-1 {
+      top: 0;
+    }
+
+    &.line-2 {
+      top: 50%;
+    }
+
+    &.line-3 {
+      top: 100%;
+    }
+  }
+
+  &:hover .line, &:focus .line {
+    background: $line-hover-color;
+  }
+
+  &.active {
+    .line-1 {
+      top: 0;
+      left: 5px;
+      width: 30px;
+      transform: translateY($translateY) translateX($translateX) rotate($rotation);
+      z-index: 40;
+    }
+
+    .line-2 {
+      border-radius: 50%;
+      background-color: rgb(163,196,188, .5)
+    ;
+      border: none;
+      height: 40px;
+      width: 40px;
+      transform: translateY(-20px) rotate(180deg);
+    }
+
+    .line-3 {
+      top: 16px;
+      left: 5px;
+      width: 30px;
+      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+    }
+  }
+}
