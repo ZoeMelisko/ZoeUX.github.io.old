@@ -735,6 +735,13 @@ iframe {
   box-shadow: 0 12px 17px 0 rgba(199, 199, 199, 0.52);
 }
 
+#final-thoughts {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .cs-header-wrap {
   position: relative;
   width: 100%;
