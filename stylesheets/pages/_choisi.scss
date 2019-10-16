@@ -62,7 +62,7 @@ section {
   }
 
   .preview-window-container {
-    background-color: $background;
+    background-color: white;
     height: 450px;
     object-fit: contain;
     overflow: hidden;
@@ -269,11 +269,6 @@ section {
   }
 }
 
-iframe {
-  z-index: 600;
-  position: absolute;
-  box-shadow: 0 12px 17px 0 rgba(199,199,199,0.52);
-}
 
 .add-shadow {
   box-shadow: 0 12px 17px 0 rgba(199,199,199,0.52);
@@ -282,12 +277,6 @@ iframe {
 .ideation {
   .text-chunk {
     margin-top: 100px;
-  }
-}
-
-.results {
-  .text-chunk {
-    margin-top: -55px;
   }
 }
 
