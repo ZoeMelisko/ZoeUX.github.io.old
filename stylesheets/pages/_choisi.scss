@@ -242,8 +242,8 @@ section {
   padding-left: 120px;
   padding-right: 120px;
   height: 230vh;
-  img {
-    width: 450px;
+  .add-space {
+    margin: 30px;
   }
 }
 
@@ -287,10 +287,10 @@ section {
   box-shadow: 0 12px 17px 0 rgba(199,199,199,0.52);
 }
 
-#final-thoughts {
-  height: 50vh;
+
+.takeaways {
   display: flex;
   justify-content: center;
   align-content: center;
-
+  height: 50vh;
 }
