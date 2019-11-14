@@ -75,6 +75,17 @@
   padding-top: 60px;
 }
 
+.grid-3e {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 60px;
+}
+
 .grid-3b {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -86,17 +97,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 50px;
 }
-
-
-//.grid-4 {
-//  display: grid;
-//  justify-content: center;
-//  text-align: left;
-//  grid-template-columns: 1fr 1fr 1fr 1fr;
-//  background-color: #94BAB3;
-//  margin-left: 80px;
-//  margin-right: 80px;
-//}
 
 .grid-5 {
   display: grid;

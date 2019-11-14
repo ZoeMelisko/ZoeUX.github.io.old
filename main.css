@@ -790,7 +790,7 @@ FORM!!
   max-width: 700px;
   -webkit-box-shadow: 0 6px 24px -15px black;
   -moz-box-shadow: 0 6px 24px -15px black;
-  box-shadow: 0 6p x 24px -15px black;
+  box-shadow: 0 6px 24px -15px black;
 }
 
 form {
@@ -852,7 +852,7 @@ form textarea {
   z-index: 1;
 }
 .shape-background h1 {
-  font-family: "Montserrat", sans-sarif;
+  font-family: "Montserrat", sans-sarif, sans-serif;
   font-size: 65px;
   font-weight: 700;
   color: #222222;
