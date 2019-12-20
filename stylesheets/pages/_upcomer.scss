@@ -20,4 +20,26 @@
   margin-top: -30px;
 }
 
-
+#Ideation {
+  margin-top: 200px;
+  .grid-2c {
+    .up-design-3 {
+      img {
+        width: 200px;
+      }
+    }
+    .up-design-2 {
+      img {
+        width: 220px;
+        margin-top: -150px;
+        margin-left: -10px;
+      }
+    }
+    .up-design-4 {
+      img {
+        width: 350px;
+        margin-left: -60px;
+      }
+    }
+  }
+}

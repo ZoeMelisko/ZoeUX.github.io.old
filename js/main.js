@@ -191,6 +191,8 @@ $(window).ready(function() {
         $('#revised-site-map-text').hide();
         $('#revised-user-flow-img').hide();
         $('#revised-user-flow-text').hide();
+        $('#next-steps-img').hide();
+        $('#next-steps-text').hide();
         $('#prototype-vid').fadeIn(400);
         $('#prototype-text').fadeIn(400);
         return false;
@@ -202,6 +204,7 @@ $(window).ready(function() {
         $(this).addClass('active-2');
         $('#RevisedSiteMap-button').removeClass('active-2');
         $('#PrototypeVid-button-button').removeClass('active-2');
+        $('#NextSteps-button').removeClass('active-2');
         $('#revised-site-map-img').hide();
         $('#revised-site-map-text').hide();
         $('#prototype-vid').hide();
@@ -215,7 +218,8 @@ $(window).ready(function() {
     $('#RevisedSiteMap-button').on('click', function() {
         $(this).addClass('active-2');
         $('#RevisedUserFlow-button').removeClass('active-2');
-        $('#PrototypeVid-button-button').removeClass('active-2');
+        $('#PrototypeVid-button').removeClass('active-2');
+        $('#NextSteps-button').removeClass('active-2');
         $('#revised-user-flow-img').hide();
         $('#revised-user-flow-text').hide();
         $('#prototype-vid').hide();
@@ -224,7 +228,7 @@ $(window).ready(function() {
         $('#revised-site-map-text').fadeIn(400);
         return false;
     });
-
+    
     // let choisiOffset = $('#choisi-sec').offset().top - 300;
     // let upcomerOffset = $('#upcomer-sec').offset().top - 500;
     // let brgrOffset = $('#brgr-sec').offset().top - 700;
