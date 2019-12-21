@@ -1,10 +1,9 @@
 
 $primary-color: #222222;
-$primary-font: 'Poppins', sans-serif;
-$secondary-font: 'Poppins', sans-serif;
+$primary-font: 'urbane', sans-serif;
+$secondary-font: 'urbane', sans-serif;
 $background:  #F7F7F7;
 $l-case: lowercase;
-
 
 //BASE STYLES
 
@@ -180,7 +179,7 @@ i {
   transition: ease ;
   .logo {
     position: relative;
-    height: 60px;
+    height: 80px;
     margin: 30px;
   }
 }

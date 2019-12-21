@@ -39,14 +39,14 @@ ul, li {
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   font-size: 65px;
   font-weight: 700;
   color: #222222;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   margin: 0;
   font-size: 18px;
   font-weight: 500;
@@ -54,13 +54,13 @@ h2 {
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -68,7 +68,7 @@ h4 {
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -76,7 +76,7 @@ p {
 }
 
 b {
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -90,7 +90,7 @@ b {
 .num-circle {
   width: 30px;
   height: 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "urbane", sans-serif;
   font-weight: bolder;
   color: white;
   border-radius: 50%;
@@ -164,7 +164,7 @@ i {
 }
 .logo-wrapper .logo {
   position: relative;
-  height: 60px;
+  height: 80px;
   margin: 30px;
 }
 
@@ -956,11 +956,11 @@ form textarea {
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  z-index: 1;
+  z-index: 0;
 }
 .shape-background h1 {
   font-family: "Montserrat", sans-sarif;
-  font-size: 65px;
+  font-size: 40px;
   font-weight: 700;
   color: #222222;
   margin: 0;
@@ -990,15 +990,14 @@ footer .home-footer div i {
 
 #intro {
   z-index: 100;
-  margin-top: 160px;
-  margin-right: 150px;
+  margin-top: 250px;
+  margin-right: 350px;
 }
-#intro #under-text {
+#intro .under-text {
   color: #D9D9D9;
   position: relative;
   text-decoration: line-through;
   margin: 0;
-  left: 80px;
 }
 
 #over-text {
@@ -1008,13 +1007,6 @@ footer .home-footer div i {
   text-align: center;
   z-index: 101;
   right: 500px;
-}
-
-.ux-icorn-pic img {
-  height: 250px;
-  position: absolute;
-  top: 420px;
-  right: 320px;
 }
 
 .img-scrolled {
@@ -1061,6 +1053,12 @@ footer .home-footer div i {
 
 .cs-sec-shape {
   margin: auto;
+}
+
+#door-shape img {
+  height: 550px;
+  margin-right: 400px;
+  position: relative;
 }
 
 #half-circle img {
