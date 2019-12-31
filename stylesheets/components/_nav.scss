@@ -10,12 +10,12 @@
   position: fixed;
   z-index: 500;
   opacity: 0;
-  transition: .3s ease all;
+  transition: .3s ease-in;
 }
 
 .open {
   opacity: 1;
-  transition: .3s ease all;
+  transition: .3s ease-in;
   z-index: 1000;
 }
 

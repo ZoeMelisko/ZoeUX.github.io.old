@@ -1,6 +1,4 @@
 // Make it rain!
-
-
 $(window).ready(function() {
     $(window).load(function () {
         $('#heuristics-img').show();

@@ -1,5 +1,5 @@
 body, html {
-  width: 100%;
+  width: 100vw;
   margin: 0;
   overflow-x: hidden;
   background-color: #F7F7F7;
@@ -110,7 +110,7 @@ b {
 }
 
 .text-chunk-1 {
-  padding-right: 70px;
+  margin-right: 0;
   line-height: 2em;
 }
 
@@ -328,7 +328,7 @@ i {
   position: absolute;
   left: 0;
   border-radius: 0.05em;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 #burger .line.line-1 {
   top: 0;
@@ -381,7 +381,7 @@ i {
   position: absolute;
   left: 0;
   border-radius: 0.05em;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 #burger-white .line.line-1 {
   top: 0;
@@ -425,12 +425,12 @@ i {
   position: fixed;
   z-index: 500;
   opacity: 0;
-  transition: 0.3s ease all;
+  transition: 0.3s ease-in;
 }
 
 .open {
   opacity: 1;
-  transition: 0.3s ease all;
+  transition: 0.3s ease-in;
   z-index: 1000;
 }
 
@@ -953,9 +953,10 @@ form textarea {
 }
 
 .shape-background #background-shapes {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   background-repeat: no-repeat;
+  background-size: cover;
   z-index: 0;
 }
 .shape-background h1 {
@@ -991,22 +992,13 @@ footer .home-footer div i {
 #intro {
   z-index: 100;
   margin-top: 250px;
-  margin-right: 350px;
+  margin-right: 150px;
 }
 #intro .under-text {
   color: #D9D9D9;
   position: relative;
   text-decoration: line-through;
   margin: 0;
-}
-
-#over-text {
-  position: absolute;
-  transform: rotate(-20deg);
-  text-transform: uppercase;
-  text-align: center;
-  z-index: 101;
-  right: 500px;
 }
 
 .img-scrolled {
@@ -1031,9 +1023,15 @@ footer .home-footer div i {
   color: #000;
   position: absolute;
   z-index: 500;
+  transition: 0.3s ease;
 }
 .cs-content-left a:hover h4 {
-  font-weight: 600;
+  transform: scale(1.01);
+  font-weight: 300;
+  text-shadow: 0 6px 28px 2px #d6d6d6;
+}
+.cs-content-left #upcomer-text-wrap, .cs-content-left #trkx-text-wrap {
+  margin-left: 20%;
 }
 
 .cs-content-right {
@@ -1087,6 +1085,14 @@ footer .home-footer div i {
   height: 700px;
   position: relative;
   right: 400px;
+}
+
+#concierge-mockup img {
+  height: 500px;
+  position: absolute;
+  z-index: 120;
+  margin-top: 30px;
+  left: 50px;
 }
 
 #upcomer-mockup img {
