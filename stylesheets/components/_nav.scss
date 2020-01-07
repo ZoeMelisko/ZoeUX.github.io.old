@@ -8,9 +8,12 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  z-index: 500;
+  //z-index: -500;
   opacity: 0;
   transition: .3s ease-in;
+  ul li {
+    list-style: none;
+  }
 }
 
 .open {
@@ -88,6 +91,8 @@
     font-size: 18px;
   }
 }
+
+
 /* add a empty string after the element with class .slide */
 .slide:hover
 {

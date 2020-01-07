@@ -65,23 +65,14 @@ footer {
 
 
 .cs-content-left {
-  margin: 50% 0 auto auto;
   text-align: left;
+  margin: 50% 0 auto 30%;
   a {
     text-decoration: none;
     cursor: pointer;
     color: #000;
     position: absolute;
-    z-index: 500;
-    transition: .3s ease;
-  }
-  a:hover h4 {
-    transform: scale(1.01);
-    font-weight: 300;
-    text-shadow: 0 6px 28px 2px rgba(214,214,214,1);
-  }
-  #upcomer-text-wrap, #trkx-text-wrap {
-    margin-left: 20%;
+    z-index: 600;
   }
 }
 
@@ -93,13 +84,9 @@ footer {
   cursor: pointer;
   color: #000;
   position: absolute;
-  z-index: 500;
-  }
-  a:hover h4 {
-    font-weight: 600;
+  z-index: 600;
   }
 }
-
 .cs-sec-shape {
   margin: auto;
 }

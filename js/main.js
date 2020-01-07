@@ -9,7 +9,7 @@ $(window).ready(function() {
         $('#prototype-text').show();
     });
 
-    let burger = $('#burger');
+    let burger = $('#burger, #burger-white');
     $(burger).on('click', function() {
         $('.open-nav').toggleClass('open');
         $('.container').toggleClass('open-container');
@@ -19,6 +19,16 @@ $(window).ready(function() {
         // $('.cs-content-right a div').toggleClass('behind');
         return false;
     });
+
+    $('.container').on('click', function() {
+        $('.open-nav').removeClass('open');
+        $('.container').removeClass('open-container');
+        $('#burger').removeClass('active');
+        $('#about-tab').addClass('active-1');
+        return false;
+    });
+
+
 
     $('#about-tab').on('click', function() {
         $(this).addClass('active-1');
