@@ -128,7 +128,7 @@ b {
 .text-chunk-sm {
   padding-right: 30px;
   padding-left: 30px;
-  line-height: 2em;
+  line-height: 1.7em;
 }
 
 .text-chunk-4 {
@@ -1005,12 +1005,35 @@ section {
   width: 280px;
 }
 
+.center img {
+  text-align: center;
+}
+
 .designs-up {
   padding-left: 120px;
   padding-right: 120px;
 }
 .designs-up .add-space {
   margin-top: 50px;
+}
+.designs-up .text-chunk {
+  padding-top: 100px;
+}
+.designs-up ul {
+  padding: 0 0 0 20px;
+  margin: 0;
+}
+.designs-up .center div img {
+  margin-left: 150px;
+}
+
+.process-imgs {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-bottom: 80px;
+}
+.process-imgs .grid-3a {
+  padding-top: 0;
 }
 
 #Ideation {
@@ -1151,7 +1174,7 @@ footer .home-footer div i {
 
 #intro {
   z-index: 100;
-  margin-top: 250px;
+  margin-top: 300px;
   margin-right: 150px;
 }
 #intro .under-text {

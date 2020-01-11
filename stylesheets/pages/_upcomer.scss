@@ -24,12 +24,34 @@
   width: 280px;
 }
 
+.center img {
+  text-align: center;
+}
 
 .designs-up {
   padding-left: 120px;
   padding-right: 120px;
   .add-space {
     margin-top: 50px;
+  }
+  .text-chunk {
+    padding-top: 100px;
+  }
+  ul {
+    padding: 0 0 0 20px;
+    margin: 0;
+  }
+  .center div img {
+    margin-left: 150px;
+  }
+}
+
+.process-imgs {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-bottom: 80px;
+  .grid-3a {
+    padding-top: 0;
   }
 }
 
