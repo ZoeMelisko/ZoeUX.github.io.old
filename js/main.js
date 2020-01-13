@@ -15,18 +15,21 @@ $(window).ready(function() {
         $('.container').toggleClass('open-container');
         $(this).toggleClass('active');
         $('#about-tab').addClass('active-1');
+        $('#services-tab').removeClass('active-1');
+        $('#contact-tab').removeClass('active-1');
+        $('.overlay').toggleClass();
         // $('.grid-1 div').toggleClass('behind');
         // $('.cs-content-right a div').toggleClass('behind');
         return false;
     });
 
-    $('.container').on('click', function() {
-        $('.open-nav').removeClass('open');
-        $('.container').removeClass('open-container');
-        $('#burger').removeClass('active');
-        $('#about-tab').addClass('active-1');
-        return false;
-    });
+    // $('.container').on('click', function() {
+    //     $('.open-nav').removeClass('open');
+    //     $('.container').removeClass('open-container');
+    //     $('#burger').removeClass('active');
+    //     $('#about-tab').addClass('active-1');
+    //     return false;
+    // });
 
 
 
@@ -265,5 +268,22 @@ $(window).ready(function() {
     //         $('#brgr-sec .brgr-img').addClass('img-scrolled');
     //     }
     // });'
+
+    // Event for when the form is submitted
+    $('form').on('submit', function (event) {
+        event.preventDefault();
+
+    });
+
+    $('input').on('focus', 'blur', function () {
+        $('#update').text('Updated!')
+    })
+
+    $('.form').on('submit', function (e) {
+        (e).preventDefault();
+        $('#update').text('Form Submitted')
+    });
+
+    var fullName = $('text').val('');
 
 });
