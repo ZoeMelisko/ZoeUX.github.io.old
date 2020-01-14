@@ -695,8 +695,6 @@ i {
 
 .tab-fade {
   padding-inline-start: 0;
-}
-.tab-fade form {
   display: block;
   background-color: white;
   max-width: 100%;
@@ -705,12 +703,12 @@ i {
   padding: 0;
   z-index: 4000;
 }
-.tab-fade form label {
+.tab-fade label {
   font-family: "urbane", sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
-.tab-fade form input {
+.tab-fade input {
   font-size: 14px;
   padding: 8px;
   outline: 0;
@@ -719,12 +717,12 @@ i {
   border-radius: 5px;
   border: 1px solid lightgrey;
 }
-.tab-fade form input:focus,
-.tab-fade form textarea:focus {
+.tab-fade input:focus,
+.tab-fade textarea:focus {
   box-shadow: inset 0 0 2px 2px #F5CECD;
   transition: all 0.3s ease-in-out;
 }
-.tab-fade form #send {
+.tab-fade #send {
   box-shadow: none;
   font-size: 14px;
   padding: 10px;
@@ -739,7 +737,7 @@ i {
   width: 100%;
   color: white;
 }
-.tab-fade form textarea {
+.tab-fade textarea {
   font-size: 14px;
   margin: 5px;
   width: 100%;
