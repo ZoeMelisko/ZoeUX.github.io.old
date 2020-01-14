@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://use.typekit.net/gco6oik.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HYTE1J47D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2HYTE1J47D');
+    </script>
 </head>
 <body>
 <div  class="shape-background">
@@ -59,19 +68,15 @@
                             <div class="tab-fade">
                                 <h3>Get in touch!</h3>
                                 <form action="https://formspree.io/mwkllqjd" method="POST">
-                                    <label>
-                                        Full Name:
-                                        <input type="text" name="_replyto" required placeholder="">
-                                    </label>
-                                    <label>
-                                        Your Email:
-                                        <input type="text" name="_replyto" required placeholder="">
-                                    </label>
-                                    <label>
-                                        Message:
-                                        <textarea name="message" required placeholder="Hello World..."></textarea>
-                                    </label>
-                                    <!-- your other form fields go here -->
+                                    <label for="name">Full Name:</label>
+                                        <input type="text" name="_replyto" required id="name" placeholder="">
+
+                                    <label for="email">Your Email:</label>
+                                        <input type="text" name="_replyto" id="email" required placeholder="">
+
+                                    <label for="message">Message:</label>
+                                        <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
+
                                     <button type="submit">Send</button>
                                 </form>
                                 <p>zoe@zoemelisko.com</p>
