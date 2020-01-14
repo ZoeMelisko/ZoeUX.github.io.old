@@ -702,16 +702,15 @@ i {
 .tab-fade form {
   display: block;
   background-color: white;
-  max-width: 700px;
+  max-width: 100%;
   border-radius: 3px;
   margin: 0;
   padding: 0;
 }
 .tab-fade form label {
   font-family: "urbane", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
-  cursor: default;
 }
 .tab-fade form input {
   font-size: 14px;
@@ -727,7 +726,8 @@ i {
   box-shadow: inset 0 0 2px 2px #F5CECD;
   transition: all 0.3s ease-in-out;
 }
-.tab-fade form button {
+.tab-fade form #send {
+  box-shadow: none;
   font-size: 14px;
   padding: 10px;
   text-transform: uppercase;
@@ -740,9 +740,6 @@ i {
   margin: 5px;
   width: 100%;
   color: white;
-}
-.tab-fade form button :hover {
-  background-color: blue;
 }
 .tab-fade form textarea {
   font-size: 14px;
