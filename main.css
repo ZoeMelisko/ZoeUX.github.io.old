@@ -693,60 +693,6 @@ i {
   z-index: 50;
 }
 
-.tab-fade {
-  padding-inline-start: 0;
-  display: block;
-  background-color: white;
-  max-width: 100%;
-  border-radius: 3px;
-  margin: 0;
-  padding: 0;
-  z-index: 4000;
-}
-.tab-fade label {
-  font-family: "urbane", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-}
-.tab-fade input {
-  font-size: 14px;
-  padding: 8px;
-  outline: 0;
-  width: 100%;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-}
-.tab-fade input:focus,
-.tab-fade textarea:focus {
-  box-shadow: inset 0 0 2px 2px #F5CECD;
-  transition: all 0.3s ease-in-out;
-}
-.tab-fade #send {
-  box-shadow: none;
-  font-size: 14px;
-  padding: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3px;
-  outline: 0;
-  cursor: pointer;
-  background: rgba(240, 128, 128, 0.8);
-  margin: 5px;
-  width: 100%;
-  color: white;
-}
-.tab-fade textarea {
-  font-size: 14px;
-  margin: 5px;
-  width: 100%;
-  height: 200px;
-  outline: 0;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  padding: 10px;
-}
 .tab-fade .hyperlink {
   text-decoration: underline;
   color: lightcoral;
@@ -770,6 +716,61 @@ i {
   object-fit: cover;
   z-index: 1001;
   opacity: 1;
+}
+
+.contact .tab-fade {
+  padding-inline-start: 0;
+  display: block;
+  background-color: white;
+  max-width: 100%;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  z-index: 4000;
+}
+.contact .tab-fade label {
+  font-family: "urbane", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.contact .tab-fade input {
+  font-size: 14px;
+  padding: 8px;
+  outline: 0;
+  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+.contact .tab-fade input:focus,
+.contact .tab-fade textarea:focus {
+  box-shadow: inset 0 0 2px 2px #F5CECD;
+  transition: all 0.3s ease-in-out;
+}
+.contact .tab-fade #send {
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  cursor: pointer;
+  background: rgba(240, 128, 128, 0.8);
+  margin: 5px;
+  width: 100%;
+  color: white;
+}
+.contact .tab-fade textarea {
+  font-size: 14px;
+  margin: 5px;
+  width: 100%;
+  height: 200px;
+  outline: 0;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 10px;
 }
 
 .slide {
