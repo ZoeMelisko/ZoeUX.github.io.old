@@ -309,6 +309,10 @@ i {
   margin-bottom: 0;
 }
 
+.home-footer div .fab:hover {
+  color: lightcoral;
+}
+
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -763,9 +767,10 @@ i {
   opacity: 0.5;
   transition: 0.5s ease;
 }
-.services .grid-2c img, .contact .grid-2c img {
+.services img, .contact img {
   width: 100%;
   height: 150px;
+  border-radius: 3px;
   object-fit: cover;
   z-index: 1001;
   opacity: 1;
