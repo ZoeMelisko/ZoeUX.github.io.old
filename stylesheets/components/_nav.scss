@@ -113,10 +113,13 @@ Form
       border-radius: 3px;
       outline: 0;
       cursor: pointer;
-      background-color: #F29797;
+      background:  rgba(240, 128, 128, .80);
       margin: 5px;
       width: 100%;
       color: white;
+      :hover {
+        background-color: blue;
+      }
     }
     textarea {
       font-size: 14px;

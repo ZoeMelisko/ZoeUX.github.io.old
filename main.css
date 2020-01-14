@@ -736,10 +736,13 @@ i {
   border-radius: 3px;
   outline: 0;
   cursor: pointer;
-  background-color: #F29797;
+  background: rgba(240, 128, 128, 0.8);
   margin: 5px;
   width: 100%;
   color: white;
+}
+.tab-fade form button :hover {
+  background-color: blue;
 }
 .tab-fade form textarea {
   font-size: 14px;
