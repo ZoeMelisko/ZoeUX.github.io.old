@@ -695,13 +695,6 @@ i {
 
 .tab-fade {
   padding-inline-start: 0;
-  /* ----------------------------------------
-  Form
-  ------------------------------------------- */
-}
-.tab-fade .hyperlink {
-  text-decoration: underline;
-  color: lightcoral;
 }
 .tab-fade form {
   display: block;
@@ -710,6 +703,7 @@ i {
   border-radius: 3px;
   margin: 0;
   padding: 0;
+  z-index: 4000;
 }
 .tab-fade form label {
   font-family: "urbane", sans-serif;
@@ -754,6 +748,10 @@ i {
   border-radius: 5px;
   border: 1px solid lightgrey;
   padding: 10px;
+}
+.tab-fade .hyperlink {
+  text-decoration: underline;
+  color: lightcoral;
 }
 
 .services, .contact {
