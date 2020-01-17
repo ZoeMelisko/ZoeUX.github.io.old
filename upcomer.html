@@ -42,45 +42,44 @@
             <div class="tab">
                 <div id="myDIV">
                     <div><a href="#" class="active-1 slide" id="about-tab"><h2>About</h2></a></div>
-                    <div><a href="#" class="slide" id="services-tab"><h2>Skills</h2></a></div>
+                    <div><a href="#" class="slide" id="services-tab"><h2>Work</h2></a></div>
                     <div><a href="#" class="slide" id="contact-tab"><h2>Contact</h2></a></div>
                 </div>
                 <div class="tab-content">
                     <div class="tab-item about active-tab-content">
-                        <ul class="tab-fade">
-                            <li><h3>Hello!</h3></li>
-                            <li><p class="text-chunk-1">I'm a UX/UI Designer with a knack for Front-End Development! My combined skill set allows me to bring creative problem solving, impactful design solutions, and cross-team collaboration to the table at all stages of a project. My core strength and passion as a designer lies in creating experiences based on user research, narrative, and emotion.</p></li>
-                            <li>
-                                <div>
-                                    <div class="flex"><h4>View Resume</h4><div class="arrow"><img src="images/right-arrow.png" alt=""></div></div>
-                                </div>
-                            </li>
-                        </ul>
+                        <div class="tab-fade">
+                            <h3>Hello!</h3>
+                            <p class="text-chunk-1">I’m a UX/UI Designer with a knack for Front-End Development. My combined skill set and curiosity of human behavior allow me to understand, design, and build user experiences collaboratively across teams to help bring ideas into a reality.</p>
+<!--                            <p class="text-chunk-1">Find out more about me <a class="hyperlink" href="about.html">here</a>!</p>-->
+                        </div>
+                        <div>
+                            <a class="btn-1" href="images/portfolio-resume.pdf" target="_blank"><h3>View Resume</h3></a>
+                        </div>
                     </div>
                     <div class="tab-item services">
-                        <ul class="tab-fade">
-                            <li><h3>Design</h3></li>
-                            <ul>
-                                <li><p>User Research</p></li>
-                                <li><p>Content Strategy</p></li>
-                                <li><p>Information Architecture </p></li>
-                                <li><p>Sketch/Adobe XD/InVision</p></li>
-                            </ul>
-                            <li><h3>Development</h3></li>
-                            <ul>
-                                <li><p>JS/jQuery</p></li>
-                                <li><p>React</p></li>
-                                <li><p>SASS</p></li>
-                                <li><p>HTML/CSS</p></li>
-                            </ul>
-                        </ul>
+                        <div class="tab-item services">
+                            <div class="tab-fade grid-2c">
+                                <div class="nav-sq-img"><a href="concierge.html"><img src="concierge-imgs/travel-hero-img.jpg" alt=""></a></div>
+                                <div class="nav-sq-img"><a href=""><img src="images/blue-truck-mountains.jpg" alt=""></a></div>
+                                <div class="nav-sq-img"><a href=""><img src="choisi-imgs/SS-18-Slide.jpg" alt=""></a></div>
+                                <div class="nav-sq-img"><a href=""><img src="up-imgs/playVs_hero.jpg" alt=""></a></div>
+                                <div class="nav-sq-img"><a href=""><img src="brgr-imgs/brgr-hero-img-2020-1.jpg" alt=""></a></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-item contact">
-                        <ul class="tab-fade">
-                            <li><h3>Let's make something magical:</h3></li>
-                            <li><p>zoe@zoemelisko.com</p></li>
-                            <li><p>Los Angeles, CA</p></li>
-                        </ul>
+                        <form class="tab-fade" method="POST" action="https://formspree.io/mwkllqjd" >
+                            <h3>Get in touch!</h3>
+                            <label for="name">Full Name:</label>
+                            <input type="text" required id="name" placeholder="">
+                            <label for="email">Your Email:</label>
+                            <input type="email" name="_replyto" id="email" required placeholder="">
+                            <label for="message">Message:</label>
+                            <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                        <p>zoe@zoemelisko.com</p>
+                        <p>Los Angeles, CA</p>
                     </div>
                 </div>
             </div>

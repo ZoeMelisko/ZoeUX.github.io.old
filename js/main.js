@@ -18,20 +18,8 @@ $(window).ready(function() {
         $('#services-tab').removeClass('active-1');
         $('#contact-tab').removeClass('active-1');
         $('.overlay').toggleClass();
-        // $('.grid-1 div').toggleClass('behind');
-        // $('.cs-content-right a div').toggleClass('behind');
         return false;
     });
-
-    // $('.container').on('click', function() {
-    //     $('.open-nav').removeClass('open');
-    //     $('.container').removeClass('open-container');
-    //     $('#burger').removeClass('active');
-    //     $('#about-tab').addClass('active-1');
-    //     return false;
-    // });
-
-
 
     $('#about-tab').on('click', function() {
         $(this).addClass('active-1');
@@ -239,7 +227,7 @@ $(window).ready(function() {
         $('#revised-site-map-text').fadeIn(400);
         return false;
     });
-    
+
     // let choisiOffset = $('#choisi-sec').offset().top - 300;
     // let upcomerOffset = $('#upcomer-sec').offset().top - 500;
     // let brgrOffset = $('#brgr-sec').offset().top - 700;
@@ -270,14 +258,10 @@ $(window).ready(function() {
     // });'
 
     // Event for when the form is submitted
-    $('form').on('submit', function (event) {
-        event.preventDefault();
-
-    });
 
     $('input').on('focus', 'blur', function () {
         $('#update').text('Updated!')
-    })
+    });
 
     $('.form').on('submit', function (e) {
         (e).preventDefault();

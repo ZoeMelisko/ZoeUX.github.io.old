@@ -12,7 +12,9 @@ body, html {
   margin: 0;
   overflow-x: hidden;
   background-color: $background;
+  scroll-behavior: smooth;
 }
+
 
 .sec-container {
   padding-left: 120px;

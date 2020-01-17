@@ -14,7 +14,7 @@
     color: $primary-color;
     margin: 0;
   }
-  }
+}
 footer {
   position: absolute;
   width: 100%;
@@ -80,11 +80,11 @@ footer {
   margin: 60% auto auto 0;
   text-align: left;
   a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #000;
-  position: absolute;
-  z-index: 600;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    position: absolute;
+    z-index: 600;
   }
 }
 .cs-sec-shape {
@@ -156,14 +156,14 @@ footer {
 }
 
 #choisi-mockup {
-   img {
-     height: 450px;
-     position: absolute;
-     z-index: 120;
-     right: 550px;
-     margin-top: 80px;
-   }
- }
+  img {
+    height: 450px;
+    position: absolute;
+    z-index: 120;
+    right: 550px;
+    margin-top: 80px;
+  }
+}
 
 #trkx-mockup {
   img {
@@ -190,4 +190,3 @@ footer {
   height: 60px;
   bottom: 0;
 }
-
