@@ -17,6 +17,16 @@ body, html {
   margin: 0;
 }
 
+.sec-container-lrg {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-top: 0;
+  height: 200vh;
+}
+.sec-container-lrg .grid-1-wrap {
+  margin: 0;
+}
+
 section {
   display: block;
   height: 100vh;
@@ -409,6 +419,11 @@ i {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   height: 50px;
+}
+
+.grid-4a {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .grid-5 {
@@ -1244,6 +1259,10 @@ form textarea {
 
 .hero-img-trkx {
   margin-top: -140px;
+}
+
+.trkx-concepts {
+  width: 450px;
 }
 
 .con-moodboard {
