@@ -52,9 +52,10 @@ ul, li {
 
 h1 {
   font-family: "urbane", sans-serif;
-  font-size: 65px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 600;
   color: #222222;
+  margin: 0;
 }
 
 h2 {
@@ -166,6 +167,23 @@ i {
   z-index: 700;
 }
 
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .logo-wrapper {
   width: 100px;
   height: 100px;
@@ -175,7 +193,7 @@ i {
 }
 .logo-wrapper .logo {
   position: relative;
-  height: 80px;
+  height: 90px;
   margin: 30px;
 }
 
@@ -1289,13 +1307,6 @@ form textarea {
   background-size: cover;
   z-index: 0;
 }
-.shape-background h1 {
-  font-family: "urbane", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  color: #222222;
-  margin: 0;
-}
 
 footer {
   position: absolute;
@@ -1321,14 +1332,10 @@ footer .home-footer div i {
 
 #intro {
   z-index: 100;
-  margin-top: 300px;
-  margin-right: 150px;
+  margin: auto;
 }
-#intro .under-text {
-  color: #D9D9D9;
-  position: relative;
-  text-decoration: line-through;
-  margin: 0;
+#intro span {
+  background-color: orange;
 }
 
 .img-scrolled {
@@ -1372,9 +1379,11 @@ footer .home-footer div i {
 }
 
 #door-shape img {
+  opacity: 0;
   height: 550px;
   margin-right: 400px;
   position: relative;
+  z-index: 2;
 }
 
 #half-circle img {
@@ -1405,10 +1414,12 @@ footer .home-footer div i {
   right: 400px;
 }
 
+#concierge-mockup {
+  transform: translateY(50px);
+}
 #concierge-mockup img {
   height: 500px;
   position: absolute;
-  z-index: 120;
   margin-top: 30px;
   left: 50px;
 }

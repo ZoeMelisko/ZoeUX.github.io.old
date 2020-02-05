@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Zoë Melisko | UX/UI Design & Front-end Developer</title>
     <link rel="apple-touch-icon" href=".">
     <link rel="shortcut icon" href="" type="image/x-icon">
@@ -87,14 +89,14 @@
         <!--   LOGO   -->
         <div  class="logo-wrapper">
             <a href="index.html">
-                <img class="logo" src="./images/zm-logo-2020@2x.png" alt="ZM-logo">
+                <img class="logo" src="./images/blue-ZM-logo.png" alt="ZM-logo">
             </a>
         </div>
         <!--   LANDING PAGE CONTENT   -->
         <section class="cs-sec landing-content">
             <div id="intro">
                 <h1>Hi, my name is Zoë.</h1> <br>
-                <h1>I understand, design, and build user experiences.</h1>
+                <h1>I <span id="float-1">understand,</span> <span id="float-2">design,</span> <span id="float-3">and build user experiences.</span></h1>
             </div>
         </section>
 
@@ -180,8 +182,18 @@
             <div><p>Los Angeles, CA</p></div>
         </div>
     </footer>
-    <script src="./js/jquery-1.12.1.min.js"></script>
-    <script src="./js/main.js"></script>
+
 </div>
+<script src="./js/jquery-1.12.1.min.js"></script>
+<script src="./js/main.js"></script>
+<script>
+    ScrollReveal().reveal('#concierge-mockup', {
+        rotate: {
+            x: 20,
+            z: 20
+        },
+     delay: 500
+    });
+</script>
 </body>
 </html>
