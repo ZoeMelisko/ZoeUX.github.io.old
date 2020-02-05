@@ -30,13 +30,9 @@ footer {
 .landing-content {
   display: flex;
   justify-content: center;
-}
-
-#intro {
-  z-index: 100;
-  margin: auto;
-  span {
-    background-color: orange;
+  #intro {
+    z-index: 100;
+    margin: auto;
   }
 }
 
