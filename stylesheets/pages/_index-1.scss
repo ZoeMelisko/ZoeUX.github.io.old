@@ -1,14 +1,5 @@
 
 @media screen and (max-width: 2560px) {
-  #home-body {
-    background-image: url('images/background2020.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-  }
   header {
     scroll-behavior: auto;
     height: 100vh;
@@ -63,7 +54,7 @@
       }
     }
   }
-  #home-main {
+  main {
     section {
       .col-2 {
         grid-template-columns: 2fr 1fr;
@@ -223,10 +214,12 @@
     transform: translateX(100%) !important;
     box-shadow: 0 0 33px 4px rgba(0,0,0,.4);
   }
+
 }
 
+
 @media screen and (max-width: 1300px) {
-  #home-main {
+  main {
     section {
       .col-2 {
         grid-template-columns: 2fr 1fr;
@@ -258,7 +251,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #home-main {
+  main {
     section {
       height: 90vh;
       .col-2 {
@@ -293,7 +286,6 @@
         height: 90vh;
         .text-chunk-mobile {
           width: 290px;
-          height: 100%;
           text-align: right;
           margin: auto 0 auto auto;
         }
@@ -310,27 +302,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  #home-body {
-    background-image: url('images/background2020.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-  }
   header {
     #intro-2020 {
       width: 80%;
-      margin: 50% auto auto;
+      margin: 30% auto auto;
     }
     nav {
-      height: 60px;
       #logo-wrap {
-        position: relative;
+        position: absolute;
         img {
-          margin: 15px 10px 10px 15px;
-          width: 50px;
+          margin: 20px;
           z-index: 1000;
         }
       }
@@ -343,12 +324,12 @@
       transform: translateX(100%);
     }
   }
-  #home-main {
+  main {
     section {
-      height: 80vh;
+      height: 100vh;
       .col-2 {
         grid-template-columns: 1fr;
-        height: 80vh;
+        height: 100vh;
         .text-chunk-mobile {
           width: 350px;
           text-align: center;
@@ -416,6 +397,14 @@
       width: 80%;
       margin: 50% auto auto;
     }
+    nav {
+      #logo-wrap {
+        img {
+          margin: 20px;
+          z-index: 1000;
+        }
+      }
+    }
     #menu {
       height: 100vh;
       width: 100vw;
@@ -424,7 +413,7 @@
       transform: translateX(100%);
     }
   }
-  #home-main {
+  main {
     section {
       height: 85vh;
       .col-2 {

@@ -1,11 +1,8 @@
-section {
-  height: 100vh;
-  width: 100%;
-}
 
-.hero-img-choisi {
-  z-index: 10;
-  transform: scale(1.3);
+#choisi-header {
+  #cs-header {
+    background-image: url('choisi-imgs/SS-18-Slide.jpg');
+  }
 }
 
 .shop-look-img {
@@ -154,16 +151,16 @@ section {
 }
 
 
-//.preview-text-wrap {
-//  position: relative;
-//  .preview-text-chunks {
-//    padding-left: 40px;
-//    margin-right: 0;
-//    text-align: left;
-//    position: absolute;
-//    display: none;
-//  }
-//}
+.preview-text-wrap {
+  position: relative;
+  .preview-text-chunks {
+    padding-left: 40px;
+    margin-right: 0;
+    text-align: left;
+    position: absolute;
+    display: none;
+  }
+}
 
 .home-page-wrap {
   display: flex;
@@ -254,10 +251,10 @@ section {
   margin-top: -80px;
 }
 
-//.takeaways {
-//  display: flex;
-//  justify-content: center;
-//  align-content: center;
-//  height: 50vh;
-//}
+.takeaways {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+}
 

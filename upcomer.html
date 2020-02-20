@@ -20,8 +20,9 @@
         gtag('config', 'G-2HYTE1J47D');
     </script>
 </head>
-<body class="upcomer-cs" id="upcomer-page-content">
-<header>
+<body>
+
+<header id="up-header">
     <nav>
         <div id="logo-wrap">
             <a href="index.html"><img id="logo" src="images/blue-ZM-logo-pressed.png" alt="Zoe Melisko logo"></a>
@@ -76,66 +77,84 @@
             </div>
         </div>
     </nav>
-    <section id="cs-header-brgr">
-        <div id="cs-overview">
+    <section id="cs-header">
+        <div id="cs-overview" class="col-2">
             <div class="col-2">
-                <div class="col-2">
-                    <div>
-                        <h4>Client</h4>
-                        <h2>Upcomer</h2>
-                    </div>
-                    <div>
-                        <h4>My Role</h4>
-                        <h2>UX/UI Designer</h2>
-                    </div>
+                <div>
+                    <h3>Client</h3>
+                    <h2>Upcomer</h2>
                 </div>
                 <div>
-                    <h4>Tools</h4>
+                    <h3>My Roll</h3>
+                    <h2>Upcomer</h2>
+                </div>
+                <div>
+                    <h3>Team</h3>
+                    <h2>Upcomer</h2>
+                </div>
+                <div>
+                    <h3>Tools</h3>
                     <h2>Sketch, InVision</h2>
                 </div>
-                <div class="col-1">
-                    <div>
-                        <h4>Brief</h4>
-                        <h2>Upcomer to get informed about eSports teams and games, but often leave after finding the information they want. This is troublesome for the lifespan of an app that builds itself upon community and growth. </h2>
-                    </div>
-                    <div>
-                        <div class="" ><a class="" href="#BehindResults"><h3>View Prototype</h3></a></div>
-                    </div>
+            </div>
+            <div class="col-1">
+                <div>
+                    <h3>Brief</h3>
+                    <h2>Concierge is a travel app that connects users to locals for recommendations and/or activities.</h2>
+                </div>
+                <div>
+                    <div class="button_cont" ><a class="btn" href="#BehindResults"><h3>View Prototype</h3></a></div>
                 </div>
             </div>
         </div>
     </section>
 </header>
 <main>
-    <section>
-        <h1>Overview</h1>
-        <div class="col-2">
-            <div>
+    <section class="sec-container">
+        <div>
+            <h1>Overview</h1>
+            <div class="grid-2b mockup-text-wrap">
                 <div class="upcomer-mockup">
                     <img src="up-imgs/up-mockups.png" alt="">
                 </div>
-            </div>
-            <div class="preview-text-chunks">
-                <h2>The Challenge</h2>
-                <h4>Our biggest challenge was to seamlessly implement engaging features that results in users interacting on the app longer without obstructing their initial purpose for visiting Upcomer. </h4>
+                <div class="overview-text">
+                    <div>
+                        <h2>The Challenge</h2>
+                        <h4>Users come to Upcomer to get informed about their favorite eSports teams and games, but often leave after finding the information they want. This is troublesome for the lifespan of an app that builds itself upon community and growth. Our biggest challenge was to seamlessly implement engaging features that results in users interacting on the app longer without obstructing their initial purpose for visiting Upcomer. </h4>
+                        <div>
+                            <h2>The Solution</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="hide-mobile">
-        <h1>Our Process</h1>
+    <section class="sec-container" id="ProcessSec">
+        <div>
             <div>
+                <h1>Our Process</h1>
+                <p class="text-chunk-3">Our process relied heavily in understanding the eSports as business as well as empathizing with the enthusiastic eSports community.</p>
+            </div>
+            <div class="process-div">
                 <img id="process-img" src="up-imgs/upcomer-process.png" alt="">
             </div>
+        </div>
     </section>
-    <section class="artifact-view" id="Research-1">
-        <h1>Research</h1>
-            <div class="col-4">
+    <section class="sec-container grid-1" id="Research">
+        <div>
+            <h1>Research</h1>
+            <p class="text-chunk-1"></p>
+        </div>
+        <div class="grid-1-wrap">
+            <div class="grid-4">
                 <div><a class="active-2 unselected" id="HeuristicEval-button" href="#"><h2>Market Research</h2></a></div>
                 <div><a class="unselected" id="CCAnalysis-button" href="#"><h2>Content Audit</h2></a></div>
-                <div><a class="unselected" id="UserFlow-button" href="#"><h2>User Flow</h2></a></div>
+                <div><a  class="unselected" id="UserFlow-button" href="#"><h2>User Flow</h2></a></div>
                 <div><a class="unselected" id="UserInterviews-button" href="#"><h2>User Interviews</h2></a></div>
             </div>
-        <div class="preview-window-wrap">
+        </div>
+        <div class="preview-window-wrap grid-2d">
             <div class="preview-window-container">
                 <div class="preview-content" id="heuristics-img"><img src="up-imgs/up-market-research.png" alt=""></div>
                 <div class="preview-content"  id="cc-img"><img src="up-imgs/up-content-analysis.png" alt=""></div>
@@ -168,17 +187,18 @@
             </div>
         </div>
     </section>
-    <section class="artifact-view" id="Analysis">
-        <h1>Analysis</h1>
+    <section class="sec-container grid-1" id="Analysis">
+        <div><h1>Analysis</h1></div>
         <!--                    After sorting through our interviews we began breaking down potential features that users spoke upon.-->
         <div class="grid-1-wrap">
-            <div class="col-4">
+            <div class="grid-4">
                 <div><a class="active-2 unselected" id="affinity-button" href="#"><h2>Affinity Mapping</h2></a></div>
                 <div><a class="unselected" id="FeatPrioritization-button" href="#"><h2>Feature Prioritization</h2></a></div>
                 <div><a class="unselected" id="Persona-button" href="#"><h2>Persona Building</h2></a></div>
+
             </div>
         </div>
-        <div class="preview-window-wrap col-2">
+        <div class="preview-window-wrap grid-2d">
             <div class="preview-window-container">
                 <div class="preview-content" id="affinity-img"><img src="up-imgs/up-affinity-mapping.png" alt=""></div>
                 <div class="preview-content" id="feature-img"><img src="up-imgs/up-feat-prior.png" alt=""></div>
@@ -200,24 +220,26 @@
             </div>
         </div>
     </section>
-    <section id="Ideation">
+    <section class="sec-container" id="Ideation">
         <h1>Designing Solutions</h1>
-        <div class="col-2">
-            <div class="col-3">
-                <div class="up-design-3"><img src="up-imgs/up-design-img-3.png" alt=""></div>
-                <div class="up-design-4 hide-mobile"><img src="up-imgs/up-design-img-4.png" alt=""></div>
-                <div class="up-design-2 hide-mobile"><img src="up-imgs/up-design-img-2.png" alt=""></div>
+        <div class="grid-2c">
+            <div class="grid-2c">
+                <div class="up-design-3"><img class="" src="up-imgs/up-design-img-3.png" alt=""></div>
+                <div class="up-design-4"><img class="" src="up-imgs/up-design-img-4.png" alt=""></div>
+                <div class="up-design-2"><img class="" src="up-imgs/up-design-img-2.png" alt=""></div>
             </div>
-            <div class="preview-text-chunks">
+            <div class="text-chunk">
                 <h2>Ideation</h2>
                 <p>I suggested we make a succinct wireframe guide so the entire team could collaborate on rapid wire-framing and conduct usability tests of our designs immediately with paper prototypes to find the friction points early in the design process.</p>
                 <p>We discovered that users were confused about the saving functionality and iconography and they stated desires for a rating system on news and strategy feeds. This lead to further iterations and tweaks that improved our overall design.</p>
             </div>
         </div>
     </section>
-    <section id="designs">
-        <h1>Final Product</h1>
-        <div class="col-3">
+    <section class="process-imgs">
+        <div class="sec-title">
+            <h1>Final Designs</h1>
+        </div>
+        <div class="grid-3a">
             <div>
                 <img src="up-imgs/up-design-process-img-1.png" alt="">
             </div>
@@ -230,11 +252,11 @@
         </div>
     </section>
     <section class="designs-up">
-        <div class="col-2">
+        <div class="grid-2c">
             <div class="center">
-                <div class="app-screen single-app-screen"><img src="./up-imgs/news-screen.png" alt=""></div>
+                <div class="app-screen"><img src="./up-imgs/news-screen.png" alt=""></div>
             </div>
-            <div class="">
+            <div class="text-chunk">
                 <h2>News Screen</h2>
                 <ul>
                     <li><p>Customizable news feed based on a users favorites with the option to see all trending eSports news.</p></li>
@@ -244,9 +266,9 @@
             </div>
         </div>
     </section>
-    <section class="designs-up hide-mobile">
-        <div class="col-2">
-            <div class="">
+    <section class="designs-up">
+        <div class="grid-2c">
+            <div class="text-chunk">
                 <h2>Profile and Team Screens</h2>
                 <ul>
                     <li><p>Robust editing/adding of favorites and friends.</p></li>
@@ -254,36 +276,19 @@
                     <li><p>Personalization of background images, time zone, and view gamer tags to connect via console.</p></li>
                 </ul>
             </div>
-            <div class="col-2">
+            <div class="grid-2c">
                 <div class="app-screen"><img src="./up-imgs/profile-screen.png" alt=""></div>
                 <div class="app-screen"><img src="./up-imgs/team-screen.png" alt=""></div>
             </div>
         </div>
     </section>
     <section class="designs-up">
-        <div class="col-2">
-            <div class="">
-                <h2>Profile and Team Screens</h2>
-                <div class="col-2">
-                    <div class="app-screen"><img src="./up-imgs/profile-screen.png" alt=""></div>
-                    <div class="app-screen"><img src="./up-imgs/team-screen.png" alt=""></div>
-                </div>
-                <ul>
-                    <li><p>Robust editing/adding of favorites and friends.</p></li>
-                    <li><p>Central hub for saved content that can be easily accessed.</p></li>
-                    <li><p>Personalization of background images, time zone, and view gamer tags to connect via console.</p></li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-    <section class="designs-up">
-        <div class="col-2">
-            <div class="col-2">
+        <div class="grid-2c">
+            <div class="grid-2c">
                 <div class="app-screen"><img src="./up-imgs/schedule-screen.png" alt=""></div>
                 <div class="app-screen"><img src="./up-imgs/strategies-screen.png" alt=""></div>
             </div>
-            <div class="">
+            <div class="text-chunk">
                 <h2>Strategies Screen</h2>
                 <ul>
                     <li><p>Engaging users via liking, commenting, saving, and in app sharing features.</p></li>
@@ -293,18 +298,18 @@
             </div>
         </div>
     </section>
-    <section class="artifact-view" id="BehindResults">
+    <section class="sec-container grid-1" id="BehindResults">
         <div>
             <h1>The Results</h1>
         </div>
         <div class="grid-1-wrap">
-            <div class="col-4">
+            <div class="grid-3b">
                 <div><a class="active-2 unselected" id="PrototypeVid-button" href="#"><h2>New User Flow</h2></a></div>
-                <div><a class="unselected" id="RevisedSiteMap-button" href="#"><h2>Revised Site Map</h2></a></div>
-                <div><a class="unselected" id="RevisedUserFlow-button" href="#"><h2></h2></a></div>
+<!--                <div><a class="unselected" id="RevisedSiteMap-button" href="#"><h2>Revised Site Map</h2></a></div>-->
+<!--                <div><a class="unselected" id="RevisedUserFlow-button" href="#"><h2></h2></a></div>-->
             </div>
         </div>
-        <div class="preview-window-wrap col-2">
+        <div class="preview-window-wrap grid-2d">
             <div class="preview-window-container">
 <!--                <div class="preview-content"  id="prototype-vid"><img src="up-imgs/Upcomer%20Messaging%20(25fps).gif" alt=""  width=250/>-->
 <!--                <div class="preview-content"  id="revised-site-map-img"><img src="up-imgs/up" alt=""></div>-->
@@ -331,36 +336,42 @@
         </div>
         </div>
     </section>
-    <section id="final-thoughts">
-        <h1>My Thoughts</h1>
-        <div class="col-2">
-            <div class="preview-text-chunks">
+    <section class="sec-container" id="final-thoughts">
+        <div class="grid-2c">
+            <div>
+                <h2>Key Takeaways</h2>
                 <p>It was amazing immersing myself in the eSports world and understand the passionate people of the community. In retrospect, I would've loved to do some contextual inquiries with users watching a game together, or better yet, visit a tournament to capture the eSports environment and have conversations with a more diverse spectrum of eSports fans. I also think conducting A/B testing with our icons early on would have saved us from multiple navigation and feature iterations early on. </p>
             </div>
             <br>
-            <div class="col-2">
+            <div class="grid-2c">
                 <div>
                     <h2>Next Steps</h2>
                     <p class=""></p>
                     <ul>
-                        <li><p class="">Continue testing with key demographic</p></li>
-                        <li><p class="">Build out more engaging features</p></li>
+                        <li><p class=""> </p></li>
+                        <li><p class=""> </p></li>
+                        <li><p class=""> </p></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 </main>
-<footer>
-    <!--   MAIN PAGE FOOTER CONTENT   -->
-    <div class="home-footer col-3">
-        <div><p>zoe@zoemelisko.com</p></div>
-        <div class="col-3 social-icons">
-            <i class="fab fa-dribbble fa-2x"></i>
-            <i class="fab fa-linkedin-in fa-2x"></i>
-            <i class="fab fa-instagram fa-2x"></i>
+<footer class="footer-cs grid-1">
+    <!--<div class="next-cs">-->
+    <!--<h2>Next Project</h2>-->
+    <!--<a href="upcomer.html">-->
+    <!--<h2>Upcomer</h2>-->
+    <!--</a>-->
+    <!--</div>-->
+    <div class="grid-3 mobile-grid-1">
+        <div><h4>zoe@zoemelisko.com</h4></div>
+        <div>
+            <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-dribbble fa-2x"></i></a>
         </div>
-        <div><p>Los Angeles, CA</p></div>
+        <div><h4>Los Angeles, CA</h4></div>
     </div>
 </footer>
 <script src="js/jquery-1.12.1.min.js"></script>

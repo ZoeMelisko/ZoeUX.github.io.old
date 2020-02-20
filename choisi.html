@@ -13,107 +13,94 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body class="choisi-cs" id="choisi-page-content">
-
-<!--   LOGO   -->
-    <div  class="logo-wrapper">
-        <a href="index.html">
-            <img class="logo" src="./images/blue-ZM-logo.png" alt="ZM-logo">
-        </a>
-    </div>
-<!--   BURGER MENU LINES   -->
-<div>
-    <a id="burger" href="#" title="Menu">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-        <span class="line line-3"></span>
-    </a>
-</div>
-<!--   SLIDING MENU   -->
-<div class="menu open-nav">
-    <div class="container">
-        <div class="menu-shelf">
-            <div class="tab">
-                <div id="myDIV">
-                    <div><a href="#" class="active-1 slide" id="about-tab"><h2>About</h2></a></div>
-                    <div><a href="#" class="slide" id="services-tab"><h2>Work</h2></a></div>
-                    <div><a href="#" class="slide" id="contact-tab"><h2>Contact</h2></a></div>
+<header id="choisi-header">
+    <nav>
+        <div id="logo-wrap">
+            <a href="index.html"><img id="logo" src="images/blue-ZM-logo-pressed.png" alt="Zoe Melisko logo"></a>
+        </div>
+        <div>
+            <div id="burger" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="navSelections">
+                <div><a href="#" class="active-1 slide" id="about-tab"><h2>About</h2></a></div>
+                <div><a href="#" class="slide" id="services-tab"><h2>Work</h2></a></div>
+                <div><a href="#" class="slide" id="contact-tab"><h2>Contact</h2></a></div>
+            </div>
+            <div id="menuContent">
+                <div class="menu-item about active-tab-content">
+                    <div class="tab-fade">
+                        <h3>Hello!</h3>
+                        <p class="text-chunk-1">I’m a UX/UI Designer with a knack for Front-End Development. My combined skill set and curiosity of human behavior allow me to understand, design, and build user experiences collaboratively across teams to help bring ideas into a reality.</p>
+                        <!--                                <p class="text-chunk-1">Find out more about me <a class="hyperlink" href="about.html">here</a>!</p>-->
+                    </div>
+                    <div>
+                        <a class="btn-1" href="images/portfolio-resume.pdf" target="_blank"><h3>View Resume</h3></a>
+                    </div>
                 </div>
-                <div class="tab-content">
-                    <div class="tab-item about active-tab-content">
-                        <div class="tab-fade">
-                            <h3>Hello!</h3>
-                            <p class="text-chunk-1">I’m a UX/UI Designer with a knack for Front-End Development. My combined skill set and curiosity of human behavior allow me to understand, design, and build user experiences collaboratively across teams to help bring ideas into a reality.</p>
-<!--                            <p class="text-chunk-1">Find out more about me <a class="hyperlink" href="about.html">here</a>!</p>-->
-                        </div>
-                        <div>
-                            <a class="btn-1" href="images/portfolio-resume.pdf" target="_blank"><h3>View Resume</h3></a>
-                        </div>
+                <div class="menu-item services">
+                    <div class="tab-fade grid-2c">
+                        <div class="nav-sq-img"><a href="concierge.html"><img src="concierge-imgs/travel-hero-img.jpg" alt=""></a></div>
+                        <div class="nav-sq-img"><a href=""><img src="trkx-imgs/blue-truck-mountains.jpg" alt=""></a></div>
+                        <div class="nav-sq-img"><a href=""><img src="choisi-imgs/SS-18-Slide.jpg" alt=""></a></div>
+                        <div class="nav-sq-img"><a href=""><img src="up-imgs/playVs_hero.jpg" alt=""></a></div>
+                        <div class="nav-sq-img"><a href=""><img src="brgr-imgs/brgr-hero-img-2020-1.jpg" alt=""></a></div>
                     </div>
-                    <div class="tab-item services">
-                        <div class="tab-item services">
-                            <div class="tab-fade grid-2c">
-                                <div class="nav-sq-img"><a href="concierge.html"><img src="concierge-imgs/travel-hero-img.jpg" alt=""></a></div>
-                                <div class="nav-sq-img"><a href=""><img src="trkx-imgs/blue-truck-mountains.jpg" alt=""></a></div>
-                                <div class="nav-sq-img"><a href="choisi.html"><img src="choisi-imgs/SS-18-Slide.jpg" alt=""></a></div>
-                                <div class="nav-sq-img"><a href="upcomer.html"><img src="up-imgs/playVs_hero.jpg" alt=""></a></div>
-                                <div class="nav-sq-img"><a href="burger-records.html"><img src="brgr-imgs/brgr-hero-img-2020-1.jpg" alt=""></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-item contact">
-                        <form class="tab-fade" method="POST" action="https://formspree.io/mwkllqjd" >
-                            <h3>Get in touch!</h3>
-                            <label for="name">Full Name:</label>
-                            <input type="text" required id="name" placeholder="">
-                            <label for="email">Your Email:</label>
-                            <input type="email" name="_replyto" id="email" required placeholder="">
-                            <label for="message">Message:</label>
-                            <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
-                            <button type="submit">Send</button>
-                        </form>
-                        <p>zoe@zoemelisko.com</p>
-                        <p>Los Angeles, CA</p>
-                    </div>
+                </div>
+                <div class="menu-item contact">
+                    <form class="tab-fade" method="POST" action="https://formspree.io/mwkllqjd" >
+                        <h3>Get in touch!</h3>
+                        <label for="name">Full Name:</label>
+                        <input type="text" required id="name" placeholder="">
+                        <label for="email">Your Email:</label>
+                        <input type="email" name="_replyto" id="email" required placeholder="">
+                        <label for="message">Message:</label>
+                        <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    <p>zoe@zoemelisko.com</p>
+                    <p>Los Angeles, CA</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<main>
-    <section class="cs-header-wrap" id="HeaderSec">
-        <div class="hero-img-choisi">
-            <img src="choisi-imgs/SS-18-Slide.jpg" alt="choisi-img">
-        </div>
-        <div class="cs-overview">
-            <div class="grid-2c" id="over-view-margin">
-            <div class="grid-2c">
+    </nav>
+    <section id="cs-header">
+        <div id="cs-overview" class="col-2">
+            <div class="col-2">
                 <div>
                     <h3>Client</h3>
-                    <p>Choisi</p>
+                    <h2>Upcomer</h2>
                 </div>
                 <div>
-                    <h3>My Role</h3>
-                    <p>UX Design & Research</p>
+                    <h3>My Roll</h3>
+                    <h2>Upcomer</h2>
                 </div>
                 <div>
                     <h3>Team</h3>
-                    <p>Tatiana Piercy, Zoe Melisko, Jessica Goldman, </p>
+                    <h2>Upcomer</h2>
                 </div>
                 <div>
                     <h3>Tools</h3>
-                    <p>InVision, InVision Studio, Sketch</p>
+                    <h2>Sketch, InVision</h2>
                 </div>
             </div>
-            <div class="grid-1">
+            <div class="col-1">
                 <div>
                     <h3>Brief</h3>
-                    <p>Choisi is a global fashion boutique utilizing AI technology to help users discover emerging luxury designer brands base on the users online shopping habits.</p>
+                    <h2>Concierge is a travel app that connects users to locals for recommendations and/or activities.</h2>
+                </div>
+                <div>
                     <div class="button_cont" ><a class="btn" href="#BehindResults"><h3>View Prototype</h3></a></div>
                 </div>
             </div>
-            </div>
         </div>
     </section>
+</header>
+
     <section class="sec-container">
         <div>
             <h1>Overview</h1>

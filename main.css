@@ -30,6 +30,7 @@ body, html {
 section {
   display: block;
   height: 100vh;
+  width: 100%;
 }
 
 img {
@@ -205,6 +206,38 @@ i {
   margin-top: 13px;
 }
 
+#Research {
+  margin-bottom: 200px;
+}
+#Research div h1 {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+#Research div .text-chunk-1 {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+#Analysis {
+  margin-bottom: 200px;
+}
+#Analysis div h1 {
+  margin-bottom: -30px;
+}
+#Analysis div .grid-4 h2 {
+  margin-top: 17px;
+}
+#Analysis div .text-chunk-1 {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.next-cs-footer {
+  width: 100%;
+  text-align: center;
+  height: 80px;
+}
+
 .slide-1 {
   display: flex;
   align-content: normal;
@@ -363,7 +396,7 @@ footer .col-3 .fab:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
   footer .col-3 .social-icons .fa-2x {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   footer .col-3 .fab:hover {
     color: lightcoral;
@@ -670,19 +703,13 @@ footer .col-3 .fab:hover {
 
 @media screen and (max-width: 768px) {
   #burger {
-    top: 30px;
-    right: 30px;
+    top: 50px;
+    right: 50px;
     position: absolute;
   }
 }
-section {
-  height: 100vh;
-  width: 100%;
-}
-
-.hero-img-choisi {
-  z-index: 10;
-  transform: scale(1.3);
+#choisi-header #cs-header {
+  background-image: url("choisi-imgs/SS-18-Slide.jpg");
 }
 
 .shop-look-img {
@@ -831,6 +858,17 @@ section {
   margin-top: 50px;
 }
 
+.preview-text-wrap {
+  position: relative;
+}
+.preview-text-wrap .preview-text-chunks {
+  padding-left: 40px;
+  margin-right: 0;
+  text-align: left;
+  position: absolute;
+  display: none;
+}
+
 .home-page-wrap {
   display: flex;
   justify-content: center;
@@ -914,274 +952,97 @@ section {
   margin-top: -80px;
 }
 
-#cs-header-brgr {
+.takeaways {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+}
+
+#brgr-header #cs-header {
   background-image: url("brgr-imgs/brgr-hero-img-2020-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
-}
-#cs-header-brgr #cs-overview {
-  width: 100vw;
-  height: 40vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  bottom: 0;
-  position: absolute;
-}
-#cs-header-brgr #cs-overview .col-2 {
-  width: 90%;
-  height: 70%;
-  margin: auto;
-  top: auto;
-}
-#cs-header-brgr #cs-overview .col-2 .col-2 {
-  margin: 0;
-  height: 100%;
 }
 
-#cs-header {
+.brgr-ideation-img img {
+  width: 500px;
+}
+
+.mockup-img-redesign {
+  margin-bottom: 80px;
+}
+
+.add-padding {
+  margin-top: 80px;
+}
+
+.add-padding-1 {
+  margin-top: 120px;
+}
+
+#prototype-vid video {
+  width: 760px;
+  margin-top: 10px;
+}
+
+#final-thoughts {
+  padding-top: 150px;
+}
+
+#up-header #cs-header {
   background-image: url("up-imgs/playVs_hero.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100%;
 }
-#cs-header #cs-overview {
-  width: 100vw;
-  height: 40vh;
-  background-color: rgba(255, 255, 255, 0.8);
-  bottom: 0;
-  position: absolute;
+
+.app-screen {
+  width: 280px;
 }
-#cs-header #cs-overview .col-2 {
-  width: 90%;
-  height: 70%;
-  margin: auto;
-  top: auto;
+
+.center img {
+  text-align: center;
 }
-#cs-header #cs-overview .col-2 .col-2 {
+
+.designs-up {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.designs-up .add-space {
+  margin-top: 50px;
+}
+.designs-up .text-chunk {
+  padding-top: 100px;
+}
+.designs-up ul {
+  padding: 0 0 0 20px;
   margin: 0;
-  height: 100%;
+}
+.designs-up .center div img {
+  margin-left: 150px;
 }
 
-@media screen and (max-width: 768px) {
-  main .hide-mobile {
-    display: none;
-  }
-  main section {
-    height: 100%;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    margin-bottom: 50px;
-  }
-  main section .col-2 {
-    grid-template-columns: 1fr;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  main section .preview-text-chunks {
-    text-align: left;
-    display: none;
-    width: 90%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main section .preview-text-wrap {
-    position: relative;
-  }
-  main section h1 {
-    font-size: 50px;
-  }
-
-  #cs-header {
-    top: 0;
-    width: 100vw;
-    height: 50%;
-  }
-  #cs-header #cs-overview {
-    width: 100vw;
-    height: 1vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    bottom: 0;
-    position: absolute;
-  }
-  #cs-header #cs-overview .col-2 {
-    grid-template-columns: 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    width: 90%;
-    height: 100%;
-    padding-top: 10px;
-    margin: auto;
-  }
-  #cs-header #cs-overview .col-2 div {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  #cs-header #cs-overview .col-2 .col-2 {
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-  }
-  #cs-header #cs-overview .col-2 .col-2 h4 {
-    margin: auto;
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-  #cs-header #cs-overview .col-2 .col-1 {
-    margin: 0;
-    row-gap: 20px;
-  }
-  #cs-header #cs-overview .col-2 .col-1 h4 {
-    margin: 0;
-  }
-
-  .artifact-view {
-    height: 100%;
-  }
-  .artifact-view .preview-window-container {
-    width: 700px;
-    height: 420px;
-    margin: auto auto 0;
-  }
-  .artifact-view .preview-window-container img {
-    width: 700px;
-    height: 420px;
-  }
-  .artifact-view .col-2 {
-    grid-template-columns: 1fr;
-  }
-  .artifact-view .col-4 {
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 60px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-  .artifact-view .col-4 div a h2 {
-    font-size: 20px;
-  }
-
-  #designs .col-3 {
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #Ideation .col-2 .col-3 {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .designs-up .single-app-screen img {
-    width: 300px;
-  }
-  .designs-up .col-2 {
-    grid-template-columns: 1fr;
-  }
-  .designs-up .col-2 .col-2 {
-    grid-template-columns: 1fr 1fr;
-  }
+.process-imgs {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-bottom: 80px;
 }
-@media screen and (max-width: 425px) {
-  header {
-    margin-bottom: 50px;
-  }
-
-  #cs-header {
-    top: 0;
-    width: 100vw;
-    height: 50%;
-  }
-  #cs-header #cs-overview {
-    width: 100vw;
-    height: 1vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    bottom: 0;
-    position: absolute;
-  }
-  #cs-header #cs-overview .col-2 {
-    grid-template-columns: 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    width: 90%;
-    height: 100%;
-    padding-top: 10px;
-    margin: auto;
-  }
-  #cs-header #cs-overview .col-2 div {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  #cs-header #cs-overview .col-2 .col-2 {
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-  }
-  #cs-header #cs-overview .col-2 .col-2 h4 {
-    margin: auto;
-    font-size: 13px;
-    text-transform: uppercase;
-  }
-  #cs-header #cs-overview .col-2 .col-1 {
-    margin: 0;
-    row-gap: 20px;
-  }
-  #cs-header #cs-overview .col-2 .col-1 h4 {
-    margin: 0;
-  }
-
-  .artifact-view {
-    height: 100%;
-  }
-  .artifact-view .preview-window-container {
-    width: 350px;
-    height: 220px;
-    margin: auto auto 0;
-  }
-  .artifact-view .preview-window-container img {
-    width: 380px;
-    height: 220px;
-  }
-  .artifact-view .col-2 {
-    grid-template-columns: 1fr;
-  }
-  .artifact-view .col-4 {
-    grid-template-columns: 1fr;
-    height: 120px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
-  .artifact-view .col-4 div a h2 {
-    font-size: 20px;
-  }
-
-  #designs .col-3 {
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  #Ideation .col-2 .col-3 {
-    grid-template-columns: 1fr;
-  }
-
-  .designs-up .single-app-screen img {
-    width: 300px;
-  }
-  .designs-up .col-2 {
-    grid-template-columns: 1fr;
-  }
-  .designs-up .col-2 .col-2 {
-    grid-template-columns: 1fr 1fr;
-  }
+.process-imgs .grid-3a {
+  padding-top: 0;
 }
+
+#Ideation {
+  margin-top: 200px;
+}
+#Ideation .grid-2c .up-design-3 img {
+  width: 200px;
+}
+#Ideation .grid-2c .up-design-2 img {
+  width: 220px;
+  margin-top: -150px;
+  margin-left: -10px;
+}
+#Ideation .grid-2c .up-design-4 img {
+  width: 350px;
+  margin-left: -60px;
+}
+
 /* ----------------------------------------
 FORM!!
 ------------------------------------------- */
@@ -1244,8 +1105,8 @@ form textarea {
   padding: 10px;
 }
 
-.hero-img-trkx {
-  margin-top: -140px;
+#trkx-header #cs-header {
+  background-image: url("trkx-imgs/blue-truck-mountains.jpg");
 }
 
 .trkx-concepts {
@@ -1264,22 +1125,117 @@ form textarea {
   height: 230vh;
 }
 
-.hero-img-concierge {
-  transform: scale(1.2);
-  margin-top: -50px;
+#concierge-header #cs-header {
+  background-image: url("concierge-imgs/travel-hero-img.jpg");
 }
 
-@media screen and (max-width: 2560px) {
-  #home-body {
-    background-image: url("images/background2020.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#cs-header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+}
+#cs-header #cs-overview {
+  width: 100vw;
+  height: 40vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  bottom: 0;
+  position: absolute;
+}
+#cs-header #cs-overview .col-2 {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+  top: auto;
+}
+#cs-header #cs-overview .col-2 .col-2 {
+  margin: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  #cs-header {
     top: 0;
     width: 100vw;
+    height: 50%;
+  }
+  #cs-header #cs-overview {
+    width: 100vw;
+    height: 1vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+  }
+  #cs-header #cs-overview .col-2 {
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 90%;
+    height: 100%;
+    padding-top: 10px;
+    margin: auto;
+  }
+  #cs-header #cs-overview .col-2 div {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #cs-header #cs-overview .col-2 .col-2 {
+    grid-template-columns: 1fr 1fr;
     height: 100%;
   }
+  #cs-header #cs-overview .col-2 .col-2 h4 {
+    margin: auto;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  #cs-header #cs-overview .col-2 .col-1 {
+    margin: 0;
+    row-gap: 20px;
+  }
+  #cs-header #cs-overview .col-2 .col-1 h4 {
+    margin: 0;
+  }
 
+  .artifact-view .preview-window-container {
+    width: 400px;
+    height: 250px;
+  }
+  .artifact-view .preview-window-container img {
+    width: 400px;
+    height: 250px;
+  }
+  .artifact-view .col-2 {
+    grid-template-columns: 1fr;
+  }
+  .artifact-view .col-4 {
+    grid-template-columns: 1fr;
+    height: 100px;
+  }
+  .artifact-view .col-4 div a h2 {
+    font-size: 20px;
+  }
+
+  #designs .col-3 {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #Ideation .col-2 .col-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .designs-up .col-2 {
+    grid-template-columns: 1fr;
+  }
+  .designs-up .col-2 .col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 2560px) {
   header {
     scroll-behavior: auto;
     height: 100vh;
@@ -1335,43 +1291,43 @@ form textarea {
     margin: auto;
   }
 
-  #home-main section .col-2 {
+  main section .col-2 {
     grid-template-columns: 2fr 1fr;
     height: 100vh;
   }
-  #home-main section .col-2 .text-chunk-mobile {
+  main section .col-2 .text-chunk-mobile {
     width: 350px;
     text-align: left;
     margin: auto auto auto 0;
   }
-  #home-main section .col-2 .mobile-mockup {
+  main section .col-2 .mobile-mockup {
     width: 100%;
     margin: auto;
   }
-  #home-main section .col-2 .mobile-mockup img {
+  main section .col-2 .mobile-mockup img {
     width: 850px;
     margin-left: 100px;
   }
-  #home-main section .col-2 .laptop-mockup {
+  main section .col-2 .laptop-mockup {
     width: 100%;
     margin: auto;
   }
-  #home-main section .col-2 .laptop-mockup img {
+  main section .col-2 .laptop-mockup img {
     width: 800px;
     margin-left: 100px;
   }
-  #home-main .hide-mobile .col-2 {
+  main .hide-mobile .col-2 {
     grid-template-columns: 1fr 2fr;
   }
-  #home-main .hide-mobile .col-2 .text-chunk-mobile {
+  main .hide-mobile .col-2 .text-chunk-mobile {
     width: 350px;
     text-align: right;
     margin: auto 0 auto auto;
   }
-  #home-main .hide-mobile .col-2 .laptop-mockup img {
+  main .hide-mobile .col-2 .laptop-mockup img {
     margin-left: 100px;
   }
-  #home-main .hide-desktop {
+  main .hide-desktop {
     display: none;
   }
 
@@ -1490,103 +1446,88 @@ form textarea {
   }
 }
 @media screen and (max-width: 1300px) {
-  #home-main section .col-2 {
+  main section .col-2 {
     grid-template-columns: 2fr 1fr;
     height: 100vh;
   }
-  #home-main section .col-2 .text-chunk-mobile {
+  main section .col-2 .text-chunk-mobile {
     width: 350px;
     text-align: left;
     margin: auto auto auto 0;
   }
-  #home-main section .col-2 .mobile-mockup {
+  main section .col-2 .mobile-mockup {
     width: 100%;
     margin: 0;
   }
-  #home-main section .col-2 .mobile-mockup img {
+  main section .col-2 .mobile-mockup img {
     width: 800px;
     margin-left: 50px;
   }
-  #home-main section .col-2 .laptop-mockup {
+  main section .col-2 .laptop-mockup {
     width: 100%;
     margin: 0;
   }
-  #home-main section .col-2 .laptop-mockup img {
+  main section .col-2 .laptop-mockup img {
     width: 800px;
     margin-left: 50px;
   }
 }
 @media screen and (max-width: 1024px) {
-  #home-main section {
+  main section {
     height: 90vh;
   }
-  #home-main section .col-2 {
+  main section .col-2 {
     grid-template-columns: 2fr 1fr;
     height: 90vh;
   }
-  #home-main section .col-2 .text-chunk-mobile {
+  main section .col-2 .text-chunk-mobile {
     width: 290px;
     text-align: left;
     margin: auto auto auto 0;
   }
-  #home-main section .col-2 .mobile-mockup {
+  main section .col-2 .mobile-mockup {
     width: 100%;
     margin: auto;
   }
-  #home-main section .col-2 .mobile-mockup img {
+  main section .col-2 .mobile-mockup img {
     width: 800px;
     margin: auto 0 auto 0;
   }
-  #home-main section .col-2 .laptop-mockup {
+  main section .col-2 .laptop-mockup {
     width: 100%;
     margin: auto;
   }
-  #home-main section .col-2 .laptop-mockup img {
+  main section .col-2 .laptop-mockup img {
     width: 800px;
     margin: auto 0 auto 0;
   }
-  #home-main .hide-mobile .col-2 {
+  main .hide-mobile .col-2 {
     grid-template-columns: 1fr 2fr;
     height: 90vh;
   }
-  #home-main .hide-mobile .col-2 .text-chunk-mobile {
+  main .hide-mobile .col-2 .text-chunk-mobile {
     width: 290px;
-    height: 100%;
     text-align: right;
     margin: auto 0 auto auto;
   }
-  #home-main .hide-mobile .col-2 .laptop-mockup {
+  main .hide-mobile .col-2 .laptop-mockup {
     margin: auto;
   }
-  #home-main .hide-mobile .col-2 .laptop-mockup img {
+  main .hide-mobile .col-2 .laptop-mockup img {
     margin-left: 0;
     padding-right: 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  #home-body {
-    background-image: url("images/background2020.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-  }
-
   header #intro-2020 {
     width: 80%;
-    margin: 50% auto auto;
-  }
-  header nav {
-    height: 60px;
+    margin: 30% auto auto;
   }
   header nav #logo-wrap {
-    position: relative;
+    position: absolute;
   }
   header nav #logo-wrap img {
-    margin: 15px 10px 10px 15px;
-    width: 50px;
+    margin: 20px;
     z-index: 1000;
   }
   header #menu {
@@ -1597,64 +1538,64 @@ form textarea {
     transform: translateX(100%);
   }
 
-  #home-main section {
-    height: 80vh;
+  main section {
+    height: 100vh;
   }
-  #home-main section .col-2 {
+  main section .col-2 {
     grid-template-columns: 1fr;
-    height: 80vh;
+    height: 100vh;
   }
-  #home-main section .col-2 .text-chunk-mobile {
+  main section .col-2 .text-chunk-mobile {
     width: 350px;
     text-align: center;
     margin: auto auto auto 0;
   }
-  #home-main section .col-2 .text-chunk-mobile {
+  main section .col-2 .text-chunk-mobile {
     margin: 0 auto auto;
   }
-  #home-main section .col-2 .mobile-mockup {
+  main section .col-2 .mobile-mockup {
     width: 85%;
     margin: auto;
   }
-  #home-main section .col-2 .mobile-mockup img {
+  main section .col-2 .mobile-mockup img {
     width: 100%;
     margin-left: 0;
   }
-  #home-main section .col-2 .laptop-mockup {
+  main section .col-2 .laptop-mockup {
     width: 85%;
     margin: auto;
   }
-  #home-main section .col-2 .laptop-mockup img {
+  main section .col-2 .laptop-mockup img {
     width: 100%;
     margin-left: 0;
   }
-  #home-main .hide-desktop {
+  main .hide-desktop {
     display: block;
   }
-  #home-main .hide-desktop .col-2 {
+  main .hide-desktop .col-2 {
     grid-template-columns: 1fr;
     height: 80vh;
   }
-  #home-main .hide-desktop .col-2 .text-chunk-mobile {
+  main .hide-desktop .col-2 .text-chunk-mobile {
     width: 350px;
     text-align: center;
     margin: 0 auto auto auto;
   }
-  #home-main .hide-desktop .col-2 .mobile-mockup {
+  main .hide-desktop .col-2 .mobile-mockup {
     margin-bottom: 0;
   }
-  #home-main .hide-desktop .col-2 .mobile-mockup img {
+  main .hide-desktop .col-2 .mobile-mockup img {
     margin-left: 0;
     margin-bottom: 0;
   }
-  #home-main .hide-desktop .col-2 .laptop-mockup {
+  main .hide-desktop .col-2 .laptop-mockup {
     margin-bottom: 0;
   }
-  #home-main .hide-desktop .col-2 .laptop-mockup img {
+  main .hide-desktop .col-2 .laptop-mockup img {
     margin-left: 0;
     margin-bottom: 0;
   }
-  #home-main .hide-mobile {
+  main .hide-mobile {
     display: none;
   }
 
@@ -1667,6 +1608,10 @@ form textarea {
     width: 80%;
     margin: 50% auto auto;
   }
+  header nav #logo-wrap img {
+    margin: 20px;
+    z-index: 1000;
+  }
   header #menu {
     height: 100vh;
     width: 100vw;
@@ -1675,21 +1620,21 @@ form textarea {
     transform: translateX(100%);
   }
 
-  #home-main section {
+  main section {
     height: 85vh;
   }
-  #home-main section .col-2 {
+  main section .col-2 {
     grid-template-columns: 1fr;
     height: 85vh;
   }
-  #home-main .hide-desktop {
+  main .hide-desktop {
     display: block;
   }
-  #home-main .hide-desktop .col-2 {
+  main .hide-desktop .col-2 {
     grid-template-columns: 1fr;
     height: 85vh;
   }
-  #home-main .hide-mobile {
+  main .hide-mobile {
     display: none;
   }
 
