@@ -1326,9 +1326,6 @@ footer .col-3 .fab:hover {
   main .hide-desktop {
     display: none;
   }
-  main .row-reverse .btn {
-    margin: 10px -20px 5px -10px;
-  }
 
   .tab-fade .hyperlink {
     text-decoration: underline;
