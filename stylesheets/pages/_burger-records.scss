@@ -1,24 +1,7 @@
-.cs-header-wrap {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  right: 0;
-  .cs-overview {
-    .grid-2c .grid-1 div .button_cont a {
-      text-decoration: none;
-      cursor: pointer;
-      color: #000;
-      position: absolute;
-      z-index: 500;
-    }
+#brgr-header {
+  #cs-header {
+    background-image: url('brgr-imgs/brgr-hero-img-2020-1.jpg');
   }
-}
-
-.hero-img-brgr {
-  z-index: 10;
-  transform: scale(1.5);
-  margin-top: -80px;
 }
 
 .brgr-ideation-img img {

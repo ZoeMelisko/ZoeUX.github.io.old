@@ -1,4 +1,15 @@
 // Make it rain!
+
+// $(window).ready(function() {
+// $(function () {
+//     $('#burger').click(function() {
+//         $('#menu').toggleClass('open');
+//         console.log('worked')
+//     });
+// });
+//
+
+
 $(window).ready(function() {
     $(window).load(function () {
         $('#heuristics-img').show();
@@ -9,16 +20,14 @@ $(window).ready(function() {
         $('#prototype-text').show();
     });
 
-    let burger = $('#burger, #burger-white');
+    let burger = $('#burger');
     $(burger).on('click', function() {
-        $('.open-nav').toggleClass('open');
-        $('.container').toggleClass('open-container');
+        $('#menu').toggleClass('open');
         $(this).toggleClass('active');
         $('#about-tab').addClass('active-1');
         $('#services-tab').removeClass('active-1');
         $('#contact-tab').removeClass('active-1');
         $('.overlay').toggleClass();
-        return false;
     });
 
     $('#about-tab').on('click', function() {

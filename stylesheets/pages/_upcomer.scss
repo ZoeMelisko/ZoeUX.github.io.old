@@ -1,23 +1,8 @@
-.cs-header-wrap {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  right: 0;
-  .cs-overview-upcomer {
-    background: #D2D9E2;
-    box-shadow: 0 5px 7px 0 rgba(0, 0, 0, .3);
-    position: absolute;
-    height: 40vh;
-    top: 60vh;
-  }
-}
 
-.hero-img-upcomer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #232F3B;
-  margin-top: -30px;
+#up-header {
+  #cs-header {
+    background-image: url("up-imgs/playVs_hero.jpg");
+  }
 }
 
 .app-screen {

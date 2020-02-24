@@ -10,7 +10,8 @@
   height: 230vh;
 }
 
-.hero-img-concierge {
-  transform: scale(1.2);
-  margin-top: -50px;
+#concierge-header {
+  #cs-header {
+    background-image: url('concierge-imgs/travel-hero-img.jpg');
+  }
 }

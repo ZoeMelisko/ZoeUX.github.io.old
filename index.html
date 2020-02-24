@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -23,177 +23,172 @@
     </script>
 </head>
 <body>
-<div  class="shape-background">
-    <img src="images/background2020.png" id="background-shapes" alt="">
-    <!--   BURGER MENU LINES   -->
-    <div>
-        <a id="burger" href="#" title="Menu">
-            <span class="line line-1"></span>
-            <span class="line line-2"></span>
-            <span class="line line-3"></span>
-        </a>
-    </div>
-    <!--   SLIDING MENU   -->
-    <div class="menu open-nav">
-        <div class="container">
-            <div class="menu-shelf">
-                <div class="tab">
-                    <div id="myDIV">
-                        <div><a href="#" class="active-1 slide" id="about-tab"><h2>About</h2></a></div>
-                        <div><a href="#" class="slide" id="services-tab"><h2>Work</h2></a></div>
-                        <div><a href="#" class="slide" id="contact-tab"><h2>Contact</h2></a></div>
+<header id="home-header">
+    <nav>
+        <div id="logo-wrap">
+            <img id="logo" src="images/blue-ZM-logo-pressed.png" alt="Zoe Melisko logo">
+        </div>
+        <div>
+            <div id="burger" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="navSelections">
+                <div><a href="#" class="active-1 slide" id="about-tab"><h2>About</h2></a></div>
+                <div><a href="#" class="slide" id="services-tab"><h2>Work</h2></a></div>
+                <div><a href="#" class="slide" id="contact-tab"><h2>Contact</h2></a></div>
+            </div>
+            <div id="menuContent">
+                <div class="menu-item about active-tab-content">
+                    <div class="tab-fade">
+                        <h3>Hello!</h3>
+                        <p class="text-chunk-1">I’m a UX/UI Designer with a knack for Front-End Development. My combined skill set and curiosity of human behavior allow me to understand, design, and build user experiences collaboratively across teams to help bring ideas into a reality.</p>
+    <!--                                <p class="text-chunk-1">Find out more about me <a class="hyperlink" href="about.html">here</a>!</p>-->
                     </div>
-                    <div class="tab-content">
-                        <div class="tab-item about active-tab-content">
-                            <div class="tab-fade">
-                                <h3>Hello!</h3>
-                                <p class="text-chunk-1">I’m a UX/UI Designer with a knack for Front-End Development. My combined skill set and curiosity of human behavior allow me to understand, design, and build user experiences collaboratively across teams to help bring ideas into a reality.</p>
-<!--                                <p class="text-chunk-1">Find out more about me <a class="hyperlink" href="about.html">here</a>!</p>-->
-                            </div>
-                            <div>
-                                <a class="btn-1" href="images/portfolio-resume.pdf" target="_blank"><h3>View Resume</h3></a>
-                            </div>
-                        </div>
-                        <div class="tab-item services">
-                            <div class="tab-item services">
-                                <div class="tab-fade grid-2c">
-                                    <div class="nav-sq-img"><a href="concierge.html"><img src="concierge-imgs/travel-hero-img.jpg" alt=""></a></div>
-                                    <div class="nav-sq-img"><a href=""><img src="trkx-imgs/blue-truck-mountains.jpg" alt=""></a></div>
-                                    <div class="nav-sq-img"><a href=""><img src="choisi-imgs/SS-18-Slide.jpg" alt=""></a></div>
-                                    <div class="nav-sq-img"><a href=""><img src="up-imgs/playVs_hero.jpg" alt=""></a></div>
-                                    <div class="nav-sq-img"><a href=""><img src="brgr-imgs/brgr-hero-img-2020-1.jpg" alt=""></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-item contact">
-                            <form class="tab-fade" method="POST" action="https://formspree.io/mwkllqjd" >
-                                <h3>Get in touch!</h3>
-                                <label for="name">Full Name:</label>
-                                <input type="text" required id="name" placeholder="">
-                                <label for="email">Your Email:</label>
-                                <input type="email" name="_replyto" id="email" required placeholder="">
-                                <label for="message">Message:</label>
-                                <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
-                                <button type="submit">Send</button>
-                            </form>
-                            <p>zoe@zoemelisko.com</p>
-                            <p>Los Angeles, CA</p>
-                        </div>
+                    <div>
+                        <a class="btn-1" href="images/portfolio-resume.pdf" target="_blank"><h3>View Resume</h3></a>
                     </div>
+                </div>
+                <div class="menu-item services">
+                        <div class="tab-fade grid-2c">
+                            <div class="nav-sq-img"><a href="concierge.html"><img src="concierge-imgs/travel-hero-img.jpg" alt=""></a></div>
+                            <div class="nav-sq-img"><a href=""><img src="trkx-imgs/blue-truck-mountains.jpg" alt=""></a></div>
+                            <div class="nav-sq-img"><a href=""><img src="choisi-imgs/SS-18-Slide.jpg" alt=""></a></div>
+                            <div class="nav-sq-img"><a href=""><img src="up-imgs/playVs_hero.jpg" alt=""></a></div>
+                            <div class="nav-sq-img"><a href=""><img src="brgr-imgs/brgr-hero-img-2020-1.jpg" alt=""></a></div>
+                        </div>
+                </div>
+                <div class="menu-item contact">
+                    <form class="tab-fade" method="POST" action="https://formspree.io/mwkllqjd" >
+                        <h3>Get in touch!</h3>
+                        <label for="name">Full Name:</label>
+                        <input type="text" required id="name" placeholder="">
+                        <label for="email">Your Email:</label>
+                        <input type="email" name="_replyto" id="email" required placeholder="">
+                        <label for="message">Message:</label>
+                        <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                    <p>zoe@zoemelisko.com</p>
+                    <p>Los Angeles, CA</p>
                 </div>
             </div>
         </div>
+    </nav>
+    <div id="intro-2020">
+        <h1>Hi, I'm Zoë!</h1> <br>
+        <h1>I <span class="highlight">understand</span>, <span class="highlight">design</span>, and <span class="highlight">build</span> user experiences.</h1>
     </div>
-    <!--   MAIN PAGE CONTENT  -->
-    <main>
-        <!--   LOGO   -->
-        <div  class="logo-wrapper">
-            <a href="index.html">
-                <img class="logo" src="./images/blue-ZM-logo.png" alt="ZM-logo">
-            </a>
-        </div>
-        <!--   LANDING PAGE CONTENT   -->
-        <section class="cs-sec landing-content">
-            <div id="intro">
-                <h1>Hi, my name is Zoë!</h1> <br>
-                <h1>I <span class="highlight">understand</span>, <span class="highlight">design</span>, and <span class="highlight">build</span> user experiences.</h1>
+</header>
+<main>
+    <section>
+        <div class="col-2">
+            <div class="mobile-mockup">
+                <img src="images/concierge-mockup-img-pressed.png" alt="">
             </div>
-        </section>
-
-        <!--   CONCIERGE SECTION CONTENT  -->
-        <section class="grid-2b cs-sec">
-            <div class="cs-sec-shape">
-                <div id="concierge-mockup"><img src="images/concierge-mockup-img.png" alt=""></div>
-                <div id="door-shape"><img src="images/door-shape.png" alt=""></div>
-            </div>
-            <div class="cs-content-right">
+            <div class="text-chunk-mobile">
                 <h1>Concierge</h1>
                 <h2>UX/UI Design</h2>
-                <p class="text-chunk-2">Connecting travelers to share in unique local experiences.</p>
-                <div class="button_cont" ><a class="btn" href="concierge.html"><h3>View Case Study</h3></a></div>
+                <p class="">Connecting travelers to share in unique local experiences.</p>
+                <div class="" ><a class="" href="concierge.html"><h3>View Case Study</h3></a></div>
             </div>
-        </section>
-
-        <!--   TRKX SECTION CONTENT  -->
-        <section class="grid-2 cs-sec">
-            <div class="cs-content-left">
+        </div>
+    </section>
+    <section class="hide-desktop">
+        <div class="col-2 row-reverse">
+            <div class="laptop-mockup" >
+                <img src="images/trkx-mockup-2020-pressed.png" alt="">
+            </div>
+            <div class="text-chunk-mobile">
                 <h1>TRKX</h1>
-                <h2>UI Design + Front-end</h2>
-                <p class="text-chunk-1">Building a new look for a transportation logistics company.</p>
-                <div class="button_cont"><a class="btn" href="trkx.html"><h3>View Case Study</h3></a></div>
+                <h2>UI Design + Front-End</h2>
+                <p class="">Building a new look for a transportation logistics company.</p>
+                <div class=""><a class="" href="trkx.html"><h3>View Case Study</h3></a></div>
             </div>
-            <div class="cs-sec-shape">
-                <div id="trkx-mockup"><img src="./trkx-imgs/trkx-mockup-2020.png" alt=""></div>
-                <div id="half-circle"><img src="./images/half-circle.png" alt=""></div>
+        </div>
+    </section>
+    <section class="hide-mobile">
+        <div class="col-2 row-reverse">
+            <div class="text-chunk-mobile">
+                <h1>TRKX</h1>
+                <h2>UI Design + Front-End</h2>
+                <p class="">Building a new look for a transportation logistics company.</p>
+                <div class=""><a class="" href="trkx.html"><h3>View Case Study</h3></a></div>
             </div>
-        </section>
-
-        <!--   CHOISI SECTION CONTENT  -->
-        <section class="grid-2b cs-sec">
-            <div class="cs-sec-shape">
-                <div id="choisi-mockup"><img src="./images/choisi-mockup-black.png" alt=""></div>
-                <div id="rectangle"><img src="./images/rectangle.png" alt=""></div>
+            <div class="laptop-mockup" >
+                <img src="images/trkx-mockup-2020-pressed.png" alt="">
             </div>
-            <div class="cs-content-right">
-                <h1>Choisi</h1>
-                <h2>UX Design</h2>
-                <p class="text-chunk-2">Tailoring e-Commerce functionality for the online luxury fashion experience.</p>
-                <div class="button_cont" ><a class="btn" href="choisi.html"><h3>View Case Study</h3></a></div>
+        </div>
+    </section>
+    <section>
+        <div class="col-2">
+            <div class="mobile-mockup">
+                <img src="images/up-mockups-pressed.png" alt="">
             </div>
-        </section>
-
-        <!--   UPCOMER SECTION CONTENT  -->
-        <section class="grid-2 cs-sec">
-            <div class="cs-content-left">
+            <div class="text-chunk-mobile">
                 <h1>Upcomer</h1>
                 <h2>UX/UI Design</h2>
-                <p class="text-chunk-1">Increasing user engagement of the eSports community.</p>
-                <div class="button_cont" ><a class="btn" href="upcomer.html"><h3>View Case Study</h3></a></div>
+                <p class="">Increasing user engagement of the eSports community.</p>
+                <div class="" ><a class="" href="upcomer.html"><h3>View Case Study</h3></a></div>
             </div>
-            <div class="cs-sec-shape">
-                <div id="upcomer-mockup"><img src="./up-imgs/up-mockups.png"  alt=""></div>
-                <div id="circle"><img src="./images/circle.png" alt=""></div>
+        </div>
+    </section>
+    <section class="hide-desktop">
+        <div class="col-2">
+            <div class="laptop-mockup">
+                <img src="images/choisi-mockup-black-pressed.png" alt="">
             </div>
-        </section>
-
-        <!--   BURGER RECORDS SECTION CONTENT  -->
-        <section class="grid-2b cs-sec">
-            <div class="cs-sec-shape">
-                <div id="brgr-mockup"><img src="./images/brgr-mockup-black.png" alt=""></div>
-                <div id="triangle"><img src="./images/triangle.png" alt=""></div>
+            <div class="text-chunk-mobile">
+                <h1>Choisi</h1>
+                <h2>UX Design</h2>
+                <p class="">Tailoring e-Commerce functionality for the online luxury fashion experience.</p>
+                <div class="" ><a class="" href="choisi.html"><h3>View Case Study</h3></a></div>
             </div>
-            <div class="cs-content-right">
+        </div>
+    </section>
+    <section class="hide-mobile">
+        <div class="col-2">
+            <div class="text-chunk-mobile">
+                <h1>Choisi</h1>
+                <h2>UX Design</h2>
+                <p class="">Tailoring e-Commerce functionality for the online luxury fashion experience.</p>
+                <div class="" ><a class="" href="choisi.html"><h3>View Case Study</h3></a></div>
+            </div>
+            <div class="laptop-mockup">
+                <img src="images/choisi-mockup-black-pressed.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="col-2">
+            <div class="laptop-mockup">
+                <img src="images/brgr-mockup-black-pressed.png" alt="">
+            </div>
+            <div class="text-chunk-mobile">
                 <h1>Burger Records</h1>
                 <h2>UX/UI Design</h2>
-                <p class="text-chunk-2">Creating a cohesive e-commerce experience.</p>
-                <div class="button_cont" ><a class="btn" href="burger-records.html"><h3>View Case Study</h3></a></div>
+                <p class="">Creating a cohesive e-commerce experience.</p>
+                <div class=""><a class="" href="burger-records.html"><h3>View Case Study</h3></a></div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <!--   MAIN PAGE FOOTER CONTENT   -->
-        <div class="home-footer grid-3 mobile-grid-1">
-            <div><p>zoe@zoemelisko.com</p></div>
-            <div>
-                <i class="fab fa-dribbble fa-2x"></i>
-                <i class="fab fa-linkedin-in fa-2x"></i>
-                <i class="fab fa-instagram fa-2x"></i>
-            </div>
-            <div><p>Los Angeles, CA</p></div>
         </div>
-    </footer>
-
-</div>
+    </section>
+</main>
+<footer>
+    <!--   MAIN PAGE FOOTER CONTENT   -->
+    <div class="home-footer col-3">
+        <div><p>zoe@zoemelisko.com</p></div>
+        <div class="col-3 social-icons">
+            <i class="fab fa-dribbble fa-2x"></i>
+            <i class="fab fa-linkedin-in fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+        </div>
+        <div><p>Los Angeles, CA</p></div>
+    </div>
+</footer>
 <script src="./js/jquery-1.12.1.min.js"></script>
 <script src="./js/main.js"></script>
-<script>
-    ScrollReveal().reveal('#concierge-mockup', {
-        rotate: {
-            x: 20,
-            z: 20
-        },
-     delay: 500
-    });
-</script>
 </body>
 </html>
