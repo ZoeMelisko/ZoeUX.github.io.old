@@ -4,37 +4,43 @@ footer {
   padding-bottom: 20px;
   .col-3 {
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    width: 80%;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     .social-icons {
-      width: 70%;
-      margin: auto;
+      width: 40%;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 15px;
+      cursor: pointer;
     }
     .fab:hover {
-      color: rgba(240, 128, 128, 1);
+      color: rgb(110,106,254,.70);
     }
   }
 }
 
 @media screen and (max-width: 425px) {
   footer {
+    padding-top: 15px;
+    padding-bottom: 10px;
     p {
-      font-size: 11px;
+      font-size: 12px;
+      margin: 5px;
     }
     .col-3 {
-      grid-template-columns:1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       width: 100%;
       text-align: center;
       .social-icons {
         width: 50%;
-        margin: 0;
+        margin: auto;
+        padding-top: 5px;
         grid-template-columns: 1fr 1fr 1fr;
         .fa-2x {
           font-size: 1em;
         }
-      }
-      .fab:hover {
-        color: rgba(240, 128, 128, 1);
       }
     }
   }

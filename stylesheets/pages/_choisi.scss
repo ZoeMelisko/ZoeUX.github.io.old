@@ -4,7 +4,11 @@
     background-image: url('choisi-imgs/SS-18-Slide.jpg');
   }
 }
-
+.scrolled {
+  #burger .line {
+    background: #000000;
+  }
+}
 .shop-look-img {
   position: absolute;
   z-index: 20;
@@ -132,8 +136,7 @@
   transition: ease;
 }
 /* add a empty string after the element with class .slide */
-.unselected:hover
-{
+.unselected:hover {
   transition: ease .04s;
   color: black;
 }

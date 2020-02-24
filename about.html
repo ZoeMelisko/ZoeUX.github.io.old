@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <title>About Me | Zoe Melisko Designer + Developer</title>
+    <link rel="apple-touch-icon" href=".">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gco6oik.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HYTE1J47D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2HYTE1J47D');
+    </script>
 </head>
 <body>
+<header id="home-header">
+    <nav>
+        <div id="logo-wrap">
+            <a href="index.html"><img id="logo" src="images/blue-ZM-logo-pressed.png" alt="Zoe Melisko logo"></a>
+        </div>
+        <div>
+            <div id="burger" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="navSelections">
+                <div><a href="#" class="active-1 slide" id="about-tab"><h2>About</h2></a></div>
+                <div><a href="#" class="slide" id="services-tab"><h2>Work</h2></a></div>
+                <div><a href="#" class="slide" id="contact-tab"><h2>Contact</h2></a></div>
+            </div>
+            <div id="menuContent">
+                <div class="menu-item about active-tab-content">
+                    <div class="tab-fade">
+                        <h3>Hello!</h3>
+                        <p class="text-chunk-1">I’m a UX/UI Designer with a knack for Front-End Development. My combined skill set and curiosity of human behavior allow me to understand, design, and build user experiences collaboratively across teams to help bring ideas into a reality.</p>
+                        <!--                                <p class="text-chunk-1">Find out more about me <a class="hyperlink" href="about.html">here</a>!</p>-->
+                    </div>
+                    <div>
+                        <a class="btn-1" href="images/portfolio-resume.pdf" target="_blank"><h3>View Resume</h3></a>
+                    </div>
+                </div>
+                <div class="menu-item services">
+                    <div class="tab-fade col-2">
+                        <div class="nav-sq-img">
+                            <a href="concierge.html">
+                                <h3>Concierge<br>UX/UI</h3>
+                                <img src="concierge-imgs/travel-hero-img.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="nav-sq-img">
+                            <a href="trkx.html">
+                                <h3>TRKX<br>UI + Front-End</h3>
+                                <img src="trkx-imgs/blue-truck-mountains.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="nav-sq-img">
+                            <a href="choisi.html">
+                                <h3>Choisi<br>UX</h3>
+                                <img src="choisi-imgs/SS-18-Slide.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="nav-sq-img">
+                            <a href="upcomer.html">
+                                <h3>Upcomer<br>UX/UI</h3>
+                                <img src="up-imgs/playVs_hero.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="nav-sq-img">
+                            <a href="burger-records.html">
+                                <h3>Burger Records<br>UX/UI</h3>
+                                <img src="brgr-imgs/brgr-hero-img-2020-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item contact">
+                    <form class="tab-fade" method="POST" action="https://formspree.io/mwkllqjd" >
+                        <h3>Get in touch!</h3>
+                        <label for="name">Full Name:</label>
+                        <input type="text" required id="name" placeholder="">
+                        <label for="email">Your Email:</label>
+                        <input type="email" name="_replyto" id="email" required placeholder="">
+                        <label for="message">Message:</label>
+                        <textarea name="message" required placeholder="Hello World..." id="message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
 
+<script src="./js/jquery-1.12.1.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
