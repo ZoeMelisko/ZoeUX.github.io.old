@@ -1,14 +1,5 @@
 // Make it rain!
 
-// $(window).ready(function() {
-// $(function () {
-//     $('#burger').click(function() {
-//         $('#menu').toggleClass('open');
-//         console.log('worked')
-//     });
-// });
-//
-
 
 $(window).ready(function() {
     $(window).load(function () {
@@ -195,28 +186,49 @@ $(window).ready(function() {
         $(this).addClass('active-2');
         $('#RevisedSiteMap-button').removeClass('active-2');
         $('#RevisedUserFlow-button').removeClass('active-2');
+        $('#PrototypeVid2-button').removeClass('active-2');
         $('#revised-site-map-img').hide();
         $('#revised-site-map-text').hide();
         $('#revised-user-flow-img').hide();
         $('#revised-user-flow-text').hide();
         $('#next-steps-img').hide();
         $('#next-steps-text').hide();
+        $('#prototype-vid2').hide();
+        $('#prototype-text2').hide();
         $('#prototype-vid').fadeIn(400);
         $('#prototype-text').fadeIn(400);
         return false;
     });
 
-
+    $('#PrototypeVid2-button').on('click', function() {
+        $(this).addClass('active-2');
+        $('#RevisedSiteMap-button').removeClass('active-2');
+        $('#RevisedUserFlow-button').removeClass('active-2');
+        $('#PrototypeVid-button').removeClass('active-2');
+        $('#revised-site-map-img').hide();
+        $('#revised-site-map-text').hide();
+        $('#revised-user-flow-img').hide();
+        $('#revised-user-flow-text').hide();
+        $('#next-steps-img').hide();
+        $('#next-steps-text').hide();
+        $('#prototype-vid').hide();
+        $('#prototype-text').hide();
+        $('#prototype-vid2').fadeIn(400);
+        $('#prototype-text2').fadeIn(400);
+        return false;
+    });
 
     $('#RevisedUserFlow-button').on('click', function() {
         $(this).addClass('active-2');
         $('#RevisedSiteMap-button').removeClass('active-2');
-        $('#PrototypeVid-button-button').removeClass('active-2');
-        $('#NextSteps-button').removeClass('active-2');
+        $('#PrototypeVid-button').removeClass('active-2');
+        $('#PrototypeVid2-button').removeClass('active-2');
         $('#revised-site-map-img').hide();
         $('#revised-site-map-text').hide();
         $('#prototype-vid').hide();
         $('#prototype-text').hide();
+        $('#prototype2-vid').hide();
+        $('#prototype2-text').hide();
         $('#revised-user-flow-text').fadeIn(400);
         $('#revised-user-flow-img').fadeIn(400);
         return false;
@@ -228,43 +240,18 @@ $(window).ready(function() {
         $('#RevisedUserFlow-button').removeClass('active-2');
         $('#PrototypeVid-button').removeClass('active-2');
         $('#NextSteps-button').removeClass('active-2');
+        $('#PrototypeVid2-button').removeClass('active-2');
         $('#revised-user-flow-img').hide();
         $('#revised-user-flow-text').hide();
         $('#prototype-vid').hide();
         $('#prototype-text').hide();
+        $('#prototype-vid2').hide();
+        $('#prototype-text2').hide();
         $('#revised-site-map-img').fadeIn(400);
         $('#revised-site-map-text').fadeIn(400);
         return false;
     });
 
-    // let choisiOffset = $('#choisi-sec').offset().top - 300;
-    // let upcomerOffset = $('#upcomer-sec').offset().top - 500;
-    // let brgrOffset = $('#brgr-sec').offset().top - 700;
-    //
-    // $(window).on('resize', function () {
-    //     choisiOffset = $('#choisi-sec').offset().top;
-    //     upcomerOffset = $('#upcomer-sec').offset().top;
-    //     brgrOffset = $('#brgr-sec').offset().top;
-    // });
-    //
-    // $(window).scroll(function() {
-    //     const scroll = $(window).scrollTop();
-    //
-    //     if (scroll >= choisiOffset) {
-    //         $('#choisi-sec .cs-info-l').addClass('text-scrolled');
-    //         $('#choisi-sec .choisi-img').addClass('img-scrolled');
-    //     }
-    //
-    //     if (scroll >= upcomerOffset) {
-    //         $('#upcomer-sec .cs-info-r').addClass('text-scrolled');
-    //         $('#upcomer-sec .upcomer-img').addClass('img-scrolled');
-    //     }
-    //
-    //     if (scroll >= brgrOffset) {
-    //         $('#brgr-sec .brgr-cs-info-l').addClass('text-scrolled');
-    //         $('#brgr-sec .brgr-img').addClass('img-scrolled');
-    //     }
-    // });'
 
     // Event for when the form is submitted
 
@@ -277,7 +264,17 @@ $(window).ready(function() {
         $('#update').text('Form Submitted')
     });
 
-    var fullName = $('text').val('');
 
 
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 100) {
+        $("#burger").addClass("scrolled");
+        console.log('working-1')
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+        $("#burger").removeClass("scrolled");
+
+    }
+});
 });

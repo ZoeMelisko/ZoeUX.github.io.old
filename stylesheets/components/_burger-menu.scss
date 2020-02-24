@@ -23,6 +23,7 @@ $translateX: 0;
   right: 50px;
   display: block;
   z-index: 5000;
+  cursor: pointer;
   .line {
     display: block;
     background: $line-color;
@@ -51,12 +52,14 @@ $translateX: 0;
   }
 
   &.active {
+    position: fixed;
     .line-1 {
       top: 0;
       left: 5px;
       width: 30px;
       transform: translateY($translateY) translateX($translateX) rotate($rotation);
       z-index: 40;
+      background: $line-color;
     }
 
     .line-2 {
@@ -72,16 +75,17 @@ $translateX: 0;
       top: 16px;
       left: 5px;
       width: 30px;
+      background: $line-color;
       transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
     }
   }
 }
+
 
 @media screen and (max-width: 768px) {
   #burger {
     top: 50px;
     right: 50px;
     position: absolute;
-
   }
 }

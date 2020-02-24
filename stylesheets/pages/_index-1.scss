@@ -1,11 +1,16 @@
 
 @media screen and (max-width: 2560px) {
+  #home-body {
+    background-image: url("images/background2020.png");
+    background-size: cover;
+  }
   header {
     scroll-behavior: auto;
     height: 100vh;
     #intro-2020 {
-      width: 100%;
-      margin: auto;
+      width: 80%;
+      height: 30%;
+      margin: 13% auto auto;
     }
     nav {
       height: 100px;
@@ -29,10 +34,10 @@
       background-color: white;
       position: fixed;
       height: 100vh;
-      width: 50vw;
+      width: 40%;
       z-index: 3000;
       transition: .3s ease-in;
-      transform: translateX(200%);
+      transform: translateX(250%);
       #navSelections {
         margin: 0;
         display: flex;
@@ -66,10 +71,9 @@
         }
         .mobile-mockup {
           width: 100%;
-          margin: auto;
+          margin: auto auto auto 80px;
           img {
-            width: 850px;
-            margin-left: 100px;
+            width: 800px;
           }
         }
         .laptop-mockup {
@@ -100,6 +104,11 @@
     .hide-desktop {
       display: none;
     }
+    .row-reverse {
+      .btn {
+        margin: 10px -20px 5px -10px;
+      }
+    }
   }
   //MENU STYLES//
   .tab-fade {
@@ -110,23 +119,54 @@
   }
   .services, .contact {
     display: none;
-    .grid-2c {
+    .col-2 {
       column-gap: 20px;
       row-gap: 20px;
-      .nav-sq-img:hover {
+      .nav-sq-img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        transition: .3s ease-in;
         a {
-          opacity: .5;
-          transition: .5s ease;
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          cursor: pointer;
+          justify-content: center;
+          color: #000;
+          img {
+            width: 100%;
+            height: 150px;
+            border-radius: 3px;
+            object-fit: cover;
+            z-index: 1001;
+            filter: brightness(80%);
+            transition: .3s ease-in;
+          }
+          h3 {
+          text-align: center;
+          position: absolute;
+          z-index: 5000;
+          margin-top: 50px;
+          color: #ffffff;
+          transition: .3s ease-in;
+          }
         }
       }
-    }
-    img {
-      width: 100%;
-      height: 150px;
-      border-radius: 3px;
-      object-fit: cover;
-      z-index: 1001;
-      opacity: 1;
+      .nav-sq-img:hover {
+        a {
+          transition: .3s ease-in;
+          h3 {
+            opacity: 1;
+            transform: scale(1.1);
+          }
+          img {
+            filter: brightness(60%);
+            transition: .3s ease-in;
+
+          }
+        }
+      }
     }
   }
   .contact {
@@ -134,32 +174,31 @@
       padding-inline-start: 0;
       display: block;
       background-color: white;
-      max-width: 100%;
+      width: 100%;
       border-radius: 3px;
-      margin: 0;
-      padding: 20px;
+      margin: 0;;
       z-index: 4000;
       label {
         font-family: $secondary-font;
         font-size: 14px;
         font-weight: 300;
+        padding-bottom: 5px;
       }
       input {
         font-size: 14px;
         padding: 8px;
         outline: 0;
         width: 100%;
-        margin: 0;
+        margin: 0 0 10px;
         border-radius: 5px;
         border: 1px solid lightgrey;
       }
       input:focus,
       textarea:focus {
-        box-shadow: inset 0 0 2px 2px #F5CECD;
+        box-shadow: inset 0 0 8px -1px rgba(130,130,130,1);
         transition: all 0.3s ease-in-out;
       }
-      #send {
-        box-shadow: none;
+      button {
         font-size: 14px;
         padding: 10px;
         text-transform: uppercase;
@@ -175,13 +214,13 @@
       }
       textarea {
         font-size: 14px;
-        margin: 0;
         width: 100%;
         height: 200px;
         outline: 0;
         border-radius: 5px;
         border: 1px solid lightgrey;
         padding: 10px;
+        margin: 0 0 10px;
       }
     }
   }
@@ -211,7 +250,7 @@
     z-index: 400;
   }
   .open {
-    transform: translateX(100%) !important;
+    transform: translateX(150%) !important;
     box-shadow: 0 0 33px 4px rgba(0,0,0,.4);
   }
 
@@ -434,5 +473,9 @@
   }
   .open {
     transform: translateX(0%) !important;
+    nav #burger.active-1 {
+      position: fixed;
+    }
+
   }
 }

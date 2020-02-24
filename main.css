@@ -16,6 +16,9 @@ body, html {
 .sec-container .grid-1-wrap {
   margin: 0;
 }
+.sec-container h1 {
+  margin-bottom: 30px;
+}
 
 .sec-container-lrg {
   padding-left: 120px;
@@ -53,7 +56,7 @@ ul, li {
 
 h1 {
   font-family: "urbane", sans-serif;
-  font-size: 42px;
+  font-size: 55px;
   font-weight: 600;
   color: #222222;
   margin: 0;
@@ -213,16 +216,17 @@ i {
   margin-top: 40px;
   margin-bottom: 0;
 }
-#Research div .text-chunk-1 {
+#Research div .research-blurb {
   margin-top: 0;
   padding-bottom: 10px;
+  width: 75%;
 }
 
 #Analysis {
   margin-bottom: 200px;
 }
 #Analysis div h1 {
-  margin-bottom: -30px;
+  margin: 0;
 }
 #Analysis div .grid-4 h2 {
   margin-top: 17px;
@@ -370,36 +374,44 @@ footer {
 }
 footer .col-3 {
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  width: 80%;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 footer .col-3 .social-icons {
-  width: 70%;
-  margin: auto;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  cursor: pointer;
 }
 footer .col-3 .fab:hover {
-  color: lightcoral;
+  color: rgba(110, 106, 254, 0.7);
 }
 
 @media screen and (max-width: 425px) {
+  footer {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
   footer p {
-    font-size: 11px;
+    font-size: 12px;
+    margin: 5px;
   }
   footer .col-3 {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 100%;
     text-align: center;
   }
   footer .col-3 .social-icons {
     width: 50%;
-    margin: 0;
+    margin: auto;
+    padding-top: 5px;
     grid-template-columns: 1fr 1fr 1fr;
   }
   footer .col-3 .social-icons .fa-2x {
     font-size: 1em;
-  }
-  footer .col-3 .fab:hover {
-    color: lightcoral;
   }
 }
 .grid-1 {
@@ -552,9 +564,10 @@ footer .col-3 .fab:hover {
   width: 200px;
   transition: all 0.4s;
   cursor: pointer;
-  margin: -10px 5px 5px -20px;
+  margin: 10px 5px 5px -18px;
   z-index: 1000;
   text-transform: capitalize;
+  padding: 20px 20px 20px 20px;
 }
 
 .btn h3 {
@@ -577,7 +590,7 @@ footer .col-3 .fab:hover {
 
 .btn:hover {
   background: #222222 !important;
-  margin: -10px 5px 5px 0;
+  margin: -10px 5px 5px 0px;
 }
 
 .btn:hover h3 {
@@ -656,6 +669,7 @@ footer .col-3 .fab:hover {
   right: 50px;
   display: block;
   z-index: 5000;
+  cursor: pointer;
 }
 #burger .line {
   display: block;
@@ -679,12 +693,16 @@ footer .col-3 .fab:hover {
 #burger:hover .line, #burger:focus .line {
   background: black;
 }
+#burger.active {
+  position: fixed;
+}
 #burger.active .line-1 {
   top: 0;
   left: 5px;
   width: 30px;
   transform: translateY(0.5em) translateX(0) rotate(45deg);
   z-index: 40;
+  background: black;
 }
 #burger.active .line-2 {
   border-radius: 50%;
@@ -698,6 +716,7 @@ footer .col-3 .fab:hover {
   top: 16px;
   left: 5px;
   width: 30px;
+  background: black;
   transform: translateY(-0.5em) translateX(0) rotate(-45deg);
 }
 
@@ -710,6 +729,10 @@ footer .col-3 .fab:hover {
 }
 #choisi-header #cs-header {
   background-image: url("choisi-imgs/SS-18-Slide.jpg");
+}
+
+.scrolled #burger .line {
+  background: #000000;
 }
 
 .shop-look-img {
@@ -961,6 +984,8 @@ footer .col-3 .fab:hover {
 
 #brgr-header #cs-header {
   background-image: url("brgr-imgs/brgr-hero-img-2020-1.jpg");
+  background-size: cover;
+  width: 100vw;
 }
 
 .brgr-ideation-img img {
@@ -1043,74 +1068,22 @@ footer .col-3 .fab:hover {
   margin-left: -60px;
 }
 
-/* ----------------------------------------
-FORM!!
-------------------------------------------- */
-#Contact {
-  margin: 0 auto;
-  max-width: 700px;
-  -webkit-box-shadow: 0 6px 24px -15px black;
-  -moz-box-shadow: 0 6px 24px -15px black;
-  box-shadow: 0 6p x 24px -15px black;
-}
-
-form {
-  display: block;
-  margin: 30px auto;
-  max-width: 100%;
-  padding: 20px;
-  border-radius: 3px;
-}
-form label {
-  margin: 5px;
-  font-weight: 400;
-}
-form input {
-  font-size: 14px;
-  padding: 8px;
-  outline: 0;
-  width: 100%;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-}
-form input input:focus,
-form input textarea:focus {
-  box-shadow: inset 0 0 20px 20px gray;
-  transition: all 0.3s ease-in-out;
-}
-form button {
-  font-size: 14px;
-  padding: 10px;
-  text-transform: uppercase;
-  font-weight: 800;
-  border: 0;
-  border-radius: 2px;
-  outline: 0;
-  cursor: pointer;
-  background-color: lightsalmon;
-  margin: 5px;
-  width: 100%;
-  color: white;
-  letter-spacing: 0.3em;
-}
-form textarea {
-  font-size: 14px;
-  margin: 5px;
-  width: 100%;
-  height: 200px;
-  outline: 0;
-  border-radius: 5px;
-  border: 1px solid lightgrey;
-  padding: 10px;
+#prototype-vid2 {
+  margin-left: 250px;
 }
 
 #trkx-header #cs-header {
   background-image: url("trkx-imgs/blue-truck-mountains.jpg");
 }
 
-.trkx-concepts {
+.sec-container-lrg .col-2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sec-container-lrg .col-2 .trkx-concepts img {
   width: 450px;
+  margin-top: 40px;
 }
 
 .con-moodboard {
@@ -1121,8 +1094,15 @@ form textarea {
   padding: 0;
 }
 
+#overviewSec {
+  margin-top: 10%;
+}
+
 #IdeationConcierge {
-  height: 230vh;
+  height: 100vh;
+}
+#IdeationConcierge h1 {
+  margin-bottom: 30px;
 }
 
 #concierge-header #cs-header {
@@ -1145,15 +1125,26 @@ form textarea {
   bottom: 0;
   position: absolute;
 }
+#cs-header #cs-overview h3 {
+  font-weight: 300;
+}
 #cs-header #cs-overview .col-2 {
-  width: 90%;
-  height: 70%;
-  margin: auto;
-  top: auto;
+  width: 80%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 #cs-header #cs-overview .col-2 .col-2 {
-  margin: 0;
   height: 100%;
+  width: 100%;
+}
+#cs-header #cs-overview .col-1 {
+  width: 80%;
+  height: 95%;
+  margin-left: 0;
+  margin-top: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 425px) {
@@ -1236,13 +1227,19 @@ form textarea {
   }
 }
 @media screen and (max-width: 2560px) {
+  #home-body {
+    background-image: url("images/background2020.png");
+    background-size: cover;
+  }
+
   header {
     scroll-behavior: auto;
     height: 100vh;
   }
   header #intro-2020 {
-    width: 100%;
-    margin: auto;
+    width: 80%;
+    height: 30%;
+    margin: 13% auto auto;
   }
   header nav {
     height: 100px;
@@ -1266,10 +1263,10 @@ form textarea {
     background-color: white;
     position: fixed;
     height: 100vh;
-    width: 50vw;
+    width: 40%;
     z-index: 3000;
     transition: 0.3s ease-in;
-    transform: translateX(200%);
+    transform: translateX(250%);
   }
   header #menu #navSelections {
     margin: 0;
@@ -1302,11 +1299,10 @@ form textarea {
   }
   main section .col-2 .mobile-mockup {
     width: 100%;
-    margin: auto;
+    margin: auto auto auto 80px;
   }
   main section .col-2 .mobile-mockup img {
-    width: 850px;
-    margin-left: 100px;
+    width: 800px;
   }
   main section .col-2 .laptop-mockup {
     width: 100%;
@@ -1330,6 +1326,9 @@ form textarea {
   main .hide-desktop {
     display: none;
   }
+  main .row-reverse .btn {
+    margin: 10px -20px 5px -10px;
+  }
 
   .tab-fade .hyperlink {
     text-decoration: underline;
@@ -1339,54 +1338,83 @@ form textarea {
   .services, .contact {
     display: none;
   }
-  .services .grid-2c, .contact .grid-2c {
+  .services .col-2, .contact .col-2 {
     column-gap: 20px;
     row-gap: 20px;
   }
-  .services .grid-2c .nav-sq-img:hover a, .contact .grid-2c .nav-sq-img:hover a {
-    opacity: 0.5;
-    transition: 0.5s ease;
+  .services .col-2 .nav-sq-img, .contact .col-2 .nav-sq-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 0.3s ease-in;
   }
-  .services img, .contact img {
+  .services .col-2 .nav-sq-img a, .contact .col-2 .nav-sq-img a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    color: #000;
+  }
+  .services .col-2 .nav-sq-img a img, .contact .col-2 .nav-sq-img a img {
     width: 100%;
     height: 150px;
     border-radius: 3px;
     object-fit: cover;
     z-index: 1001;
+    filter: brightness(80%);
+    transition: 0.3s ease-in;
+  }
+  .services .col-2 .nav-sq-img a h3, .contact .col-2 .nav-sq-img a h3 {
+    text-align: center;
+    position: absolute;
+    z-index: 5000;
+    margin-top: 50px;
+    color: #ffffff;
+    transition: 0.3s ease-in;
+  }
+  .services .col-2 .nav-sq-img:hover a, .contact .col-2 .nav-sq-img:hover a {
+    transition: 0.3s ease-in;
+  }
+  .services .col-2 .nav-sq-img:hover a h3, .contact .col-2 .nav-sq-img:hover a h3 {
     opacity: 1;
+    transform: scale(1.1);
+  }
+  .services .col-2 .nav-sq-img:hover a img, .contact .col-2 .nav-sq-img:hover a img {
+    filter: brightness(60%);
+    transition: 0.3s ease-in;
   }
 
   .contact .tab-fade {
     padding-inline-start: 0;
     display: block;
     background-color: white;
-    max-width: 100%;
+    width: 100%;
     border-radius: 3px;
     margin: 0;
-    padding: 20px;
     z-index: 4000;
   }
   .contact .tab-fade label {
     font-family: "urbane", sans-serif;
     font-size: 14px;
     font-weight: 300;
+    padding-bottom: 5px;
   }
   .contact .tab-fade input {
     font-size: 14px;
     padding: 8px;
     outline: 0;
     width: 100%;
-    margin: 0;
+    margin: 0 0 10px;
     border-radius: 5px;
     border: 1px solid lightgrey;
   }
   .contact .tab-fade input:focus,
 .contact .tab-fade textarea:focus {
-    box-shadow: inset 0 0 2px 2px #F5CECD;
+    box-shadow: inset 0 0 8px -1px #828282;
     transition: all 0.3s ease-in-out;
   }
-  .contact .tab-fade #send {
-    box-shadow: none;
+  .contact .tab-fade button {
     font-size: 14px;
     padding: 10px;
     text-transform: uppercase;
@@ -1402,13 +1430,13 @@ form textarea {
   }
   .contact .tab-fade textarea {
     font-size: 14px;
-    margin: 0;
     width: 100%;
     height: 200px;
     outline: 0;
     border-radius: 5px;
     border: 1px solid lightgrey;
     padding: 10px;
+    margin: 0 0 10px;
   }
 
   .slide {
@@ -1441,7 +1469,7 @@ form textarea {
   }
 
   .open {
-    transform: translateX(100%) !important;
+    transform: translateX(150%) !important;
     box-shadow: 0 0 33px 4px rgba(0, 0, 0, 0.4);
   }
 }
@@ -1640,6 +1668,9 @@ form textarea {
 
   .open {
     transform: translateX(0%) !important;
+  }
+  .open nav #burger.active-1 {
+    position: fixed;
   }
 }
 
