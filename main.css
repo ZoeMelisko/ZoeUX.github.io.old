@@ -1072,6 +1072,24 @@ footer .col-3 .fab:hover {
   margin-left: 250px;
 }
 
+#about-header {
+  background-image: url("images/background2020.png");
+  background-size: cover;
+}
+#about-header #clickme {
+  background-color: #554eff;
+  border-radius: 5px;
+}
+#about-header #clickme h3 {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+#about-header button:focus {
+  outline: none;
+}
+
 #trkx-header #cs-header {
   background-image: url("trkx-imgs/blue-truck-mountains.jpg");
 }
@@ -1288,6 +1306,10 @@ footer .col-3 .fab:hover {
     margin: auto;
   }
 
+  main section {
+    height: 100%;
+    overflow-y: hidden;
+  }
   main section .col-2 {
     grid-template-columns: 2fr 1fr;
     height: 100vh;
