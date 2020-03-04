@@ -18,7 +18,6 @@ $(window).ready(function() {
         $('#about-tab').addClass('active-1');
         $('#services-tab').removeClass('active-1');
         $('#contact-tab').removeClass('active-1');
-        $('.overlay').toggleClass();
     });
 
     $('#about-tab').on('click', function() {

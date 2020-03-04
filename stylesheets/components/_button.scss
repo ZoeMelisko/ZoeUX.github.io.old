@@ -23,7 +23,7 @@
   display: inline-block;
   position: relative;
   padding-right: 5px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .btn h3:after {
   content: '\203A';
@@ -31,11 +31,12 @@
   opacity: 0;
   top: -2px;
   right: 5px;
-  transition: 0.5s;
+  transition: 0.3s;
   transform: scale(1.5);
 }
 .btn:hover {
   //background: #222222 !important;
+  //background-color: #006C53 !important;
   background-color: #6F6AFF !important;
   margin: -10px 5px 5px 0px;
 }
@@ -61,7 +62,15 @@
 
 
 
+.btn-L {
+  .btn {
+    padding-right: 0;
+  }
+  .btn:hover {
+    padding-right: 20px;
 
+  }
+}
 
 .btn-1 {
   border-radius: 4px;
@@ -95,7 +104,7 @@
   transform: scale(1.5);
 }
 .btn-1:hover {
-  background: #222222 !important;
+  background-color: #6F6AFF !important;
   margin: 10px 5px 5px 10px;
   padding:  10px 10px 10px 10px;
 }
