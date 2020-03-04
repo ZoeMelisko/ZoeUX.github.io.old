@@ -61,6 +61,7 @@ h1 {
   font-weight: 600;
   color: #222222;
   margin: 0;
+  cursor: default;
 }
 
 h2 {
@@ -237,43 +238,6 @@ i {
   padding-bottom: 10px;
 }
 
-.next-cs-footer {
-  width: 100%;
-  text-align: center;
-  height: 80px;
-}
-
-.slide-1 {
-  display: flex;
-  align-content: normal;
-  z-index: 40;
-  content: "";
-  height: 10px;
-  position: relative;
-  background: rgba(240, 128, 128, 0.35);
-  width: 90%;
-  margin-right: 20px;
-  transition: all 0.2s ease-in-out;
-  margin-top: 20px;
-}
-.slide-1 :hover {
-  display: flex;
-  align-content: normal;
-  z-index: 40;
-  content: "";
-  height: 40px;
-  position: absolute;
-  background: lightcoral;
-  width: 120px;
-  margin-right: 0px;
-  padding: 10px;
-  margin-top: -30px;
-}
-.slide-1 h3 {
-  margin-top: -14px;
-  margin-left: 5px;
-}
-
 .preview-window-wrap {
   text-align: center;
 }
@@ -346,6 +310,7 @@ i {
 
 .highlight {
   position: relative;
+  cursor: default;
 }
 .highlight:after {
   display: block;
@@ -579,7 +544,7 @@ footer .col-3 #copyright {
   display: inline-block;
   position: relative;
   padding-right: 5px;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .btn h3:after {
@@ -588,7 +553,7 @@ footer .col-3 #copyright {
   opacity: 0;
   top: -2px;
   right: 5px;
-  transition: 0.5s;
+  transition: 0.3s;
   transform: scale(1.5);
 }
 
@@ -613,6 +578,13 @@ footer .col-3 #copyright {
 .grid-1 .btn:hover {
   background: #222222 !important;
   margin: 10px 5px 5px 0;
+}
+
+.btn-L .btn {
+  padding-right: 0;
+}
+.btn-L .btn:hover {
+  padding-right: 20px;
 }
 
 .btn-1 {
@@ -650,7 +622,7 @@ footer .col-3 #copyright {
 }
 
 .btn-1:hover {
-  background: #222222 !important;
+  background-color: #6F6AFF !important;
   margin: 10px 5px 5px 10px;
   padding: 10px 10px 10px 10px;
 }
@@ -1325,6 +1297,7 @@ footer .col-3 #copyright {
     height: 100vh;
   }
   main section .col-2 .text-chunk-mobile {
+    cursor: default;
     width: 350px;
     text-align: left;
     margin: auto auto auto 0;
