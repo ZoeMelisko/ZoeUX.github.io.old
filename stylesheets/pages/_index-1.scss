@@ -39,7 +39,6 @@
       transition: .3s ease-in;
       transform: translateX(250%);
       #navSelections {
-
         margin: 0;
         display: flex;
         flex-flow: row wrap;
@@ -63,7 +62,6 @@
   main {
     section {
       height: 100%;
-      overflow-y: hidden;
       .col-2 {
         grid-template-columns: 2fr 1fr;
         height: 100vh;
@@ -139,7 +137,7 @@
             border-radius: 3px;
             object-fit: cover;
             z-index: 1001;
-            filter: brightness(80%);
+            filter: brightness(90%);
             transition: .3s ease-in;
           }
           h3 {
@@ -162,7 +160,6 @@
           img {
             filter: brightness(60%);
             transition: .3s ease-in;
-
           }
         }
       }
@@ -434,6 +431,9 @@
     #intro-2020 {
       width: 80%;
       margin: 50% auto auto;
+      h1 {
+        font-size: $tab-h2;
+      }
     }
     nav {
       #logo-wrap {
