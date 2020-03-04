@@ -23,7 +23,8 @@ body, html {
   padding-left: 120px;
   padding-right: 120px;
   margin-bottom: 50px;
-  margin-top: 0;
+  height: 100%;
+  overflow-y: hidden;
   .grid-1-wrap {
     margin: 0;
   }
@@ -222,7 +223,7 @@ i {
 }
 
 #Research {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   div {
     h1 {
       margin-top: 40px;
@@ -237,7 +238,7 @@ i {
 }
 
 #Analysis {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   div {
     h1 {
       margin: 0;
