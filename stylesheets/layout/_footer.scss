@@ -18,9 +18,12 @@ footer {
     .fab:hover {
       color: rgb(110,106,254,.70);
     }
-    #copyright {
-      font-size: $tab-h5;
-    }
+  }
+  #copyright {
+    font-size: $tab-h5;
+    float: right;
+    margin-right: 30px;
+    color: #828282;
   }
 }
 

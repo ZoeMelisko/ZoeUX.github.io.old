@@ -10,9 +10,8 @@ body, html {
 .sec-container {
   padding-left: 120px;
   padding-right: 120px;
-  margin-bottom: 50px;
-  height: 100%;
-  overflow-y: hidden;
+  height: 100vh;
+  overflow-y: auto;
 }
 .sec-container .grid-1-wrap {
   margin: 0;
@@ -212,7 +211,7 @@ i {
 }
 
 #Research {
-  padding-bottom: 200px;
+  margin-bottom: 200px;
 }
 #Research div h1 {
   margin-top: 40px;
@@ -355,8 +354,11 @@ footer .col-3 .social-icons {
 footer .col-3 .fab:hover {
   color: rgba(110, 106, 254, 0.7);
 }
-footer .col-3 #copyright {
+footer #copyright {
   font-size: 10px;
+  float: right;
+  margin-right: 30px;
+  color: #828282;
 }
 
 @media screen and (max-width: 425px) {
@@ -965,7 +967,8 @@ footer .col-3 #copyright {
 }
 
 .brgr-ideation-img img {
-  width: 500px;
+  top: 0;
+  width: 600px;
 }
 
 .mockup-img-redesign {
@@ -985,12 +988,8 @@ footer .col-3 #copyright {
   margin-top: 10px;
 }
 
-#final-thoughts {
-  padding-top: 150px;
-}
-
 #up-header #cs-header {
-  background-image: url("up-imgs/playVs_hero.jpg");
+  background-image: url("up-imgs/playVs_hero-pressed.jpg");
 }
 
 .app-screen {
@@ -1036,7 +1035,7 @@ footer .col-3 #copyright {
 }
 #Ideation .grid-2c .up-design-2 img {
   width: 220px;
-  margin-top: -150px;
+  margin-top: -120px;
   margin-left: -10px;
 }
 #Ideation .grid-2c .up-design-4 img {
