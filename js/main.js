@@ -2,14 +2,13 @@
 
 
 $(window).ready(function() {
-    $(window).load(function () {
         $('#heuristics-img').show();
         $('#heuristic-text').show();
         $('#affinity-img').show();
         $('#affinity-text').show();
         $('#prototype-vid').show();
         $('#prototype-text').show();
-    });
+
 
     let burger = $('#burger');
     $(burger).on('click', function() {
