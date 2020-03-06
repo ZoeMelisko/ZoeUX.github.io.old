@@ -6,17 +6,47 @@
 #about-header {
   background-image: url("images/background2020.png");
   background-size: cover;
+  height: 25vh;
+}
+
+#about-main {
+  padding-right: 127px;
+  padding-left: 127px;
   #clickme {
     h3 {
       color: white;
       padding-left: 20px;
       padding-right: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       border: none;
+      cursor: pointer;
     }
     background-color: rgb(85,78,255);
     border-radius: 5px;
   }
-  button:focus {
-    outline: none;
+  .col-2 {
+    #right-col {
+      div {
+        #portfolio-headshot {
+          width: 320px;
+        }
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+    }
+    #left-col {
+      div {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+      }
+    }
   }
 }
+
+
+
+button:focus {outline:0;}

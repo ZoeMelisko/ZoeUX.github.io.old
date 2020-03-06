@@ -1050,19 +1050,43 @@ footer #copyright {
 #about-header {
   background-image: url("images/background2020.png");
   background-size: cover;
+  height: 25vh;
 }
-#about-header #clickme {
+
+#about-main {
+  padding-right: 127px;
+  padding-left: 127px;
+}
+#about-main #clickme {
   background-color: #554eff;
   border-radius: 5px;
 }
-#about-header #clickme h3 {
+#about-main #clickme h3 {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border: none;
+  cursor: pointer;
 }
-#about-header button:focus {
-  outline: none;
+#about-main .col-2 #right-col div {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#about-main .col-2 #right-col div #portfolio-headshot {
+  width: 320px;
+}
+#about-main .col-2 #left-col div {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+button:focus {
+  outline: 0;
 }
 
 #trkx-header #cs-header {
