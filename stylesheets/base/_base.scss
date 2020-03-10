@@ -4,7 +4,7 @@ $primary-font: 'urbane', sans-serif;
 $secondary-font: 'urbane', sans-serif;
 $background:  #F7F7F7;
 $l-case: lowercase;
-$colorLink: rgba(240, 128, 128, 1);
+$colorLink: #9997FF;
 $colorLine: #2e2d33;
 $heightLine: 20px;
 
@@ -326,29 +326,4 @@ i {
   }
 }
 
-.highlight {
-  position: relative;
-  cursor: default;
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 7px;
-    right: -3px;
-    left: -3px;
-    height: $heightLine;
-    z-index: -1;
-    background-color: $colorLink;
-    transform: scaleX(0);
-    visibility: hidden;
-    transform-origin: right;
-    transition: .4s transform cubic-bezier(0,.01,0,1),visibility 0s .4s;
-  }
-  &:hover:after {
-    transform: scaleX(1);
-    visibility: visible;
-    transform-origin: left;
-    transition: .2s transform cubic-bezier(0,.01,0,1);
-  }
-}
 
