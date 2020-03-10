@@ -104,7 +104,7 @@
 
     <div id="intro-2020">
         <h1>Hi, I'm Zoë!</h1> <br>
-        <h1>I <span class="highlight">understand</span>, <span class="highlight">design</span>, and <span class="highlight">build</span> user experiences.</h1>
+        <h1>I understand, design, and build user experiences.</h1>
     </div>
 </header>
 <main>
@@ -126,7 +126,7 @@
             <div class="laptop-mockup">
                 <img src="images/choisi-mockup-black-pressed.png" alt="">
             </div>
-            <div class="text-chunk-mobile">
+            <div class="text-chunk-mobile ">
                 <h1>Choisi</h1>
                 <h2>UX Design</h2>
                 <p class="">Tailoring e-Commerce functionality for the online luxury fashion experience.</p>
@@ -136,7 +136,7 @@
     </section>
     <section class="hide-mobile">
         <div class="col-2 row-reverse">
-            <div class="text-chunk-mobile">
+            <div class="text-chunk-mobile animate-left">
                 <h1>Choisi</h1>
                 <h2>UX Design</h2>
                 <p class="">Tailoring e-Commerce functionality for the online luxury fashion experience.</p>
@@ -175,7 +175,7 @@
     </section>
     <section class="hide-mobile">
         <div class="col-2">
-            <div class="text-chunk-mobile">
+            <div class="text-chunk-mobile animate-left">
                 <h1>TRKX</h1>
                 <h2>UI Design + Front-End</h2>
                 <p class="">Building a new look for a transportation logistics company.</p>
@@ -214,10 +214,30 @@
         <div><p>Los Angeles, CA</p></div>
     </div>
     <div>
-        <p id="copyright">© Copyright Zoë Melisko 2020 All Rights Reserved</p id="copyright">
+        <p id="copyright">© Copyright Zoë Melisko 2020 All Rights Reserved</p>
     </div>
 </footer>
 <script src="./js/jquery-1.12.1.min.js"></script>
 <script src="./js/main.js"></script>
+<script>
+    ScrollReveal().reveal('.concierge-mockup, .mobile-mockup, .laptop-mockup', { delay: 230,
+        origin: 'bottom',
+        distance: '60px',
+        easing: 'ease'
+    }
+);
+ScrollReveal().reveal( '.text-chunk-mobile', { delay: 230,
+        origin: 'right',
+        distance: '60px',
+        easing: 'ease'
+    }
+);
+ScrollReveal().reveal( '.animate-left', { delay: 230,
+        origin: 'left',
+        distance: '60px',
+        easing: 'ease'
+    }
+);
+</script>
 </body>
 </html>

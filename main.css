@@ -307,32 +307,6 @@ i {
   margin-bottom: 0;
 }
 
-.highlight {
-  position: relative;
-  cursor: default;
-}
-.highlight:after {
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  right: -3px;
-  left: -3px;
-  height: 20px;
-  z-index: -1;
-  background-color: lightcoral;
-  transform: scaleX(0);
-  visibility: hidden;
-  transform-origin: right;
-  transition: 0.4s transform cubic-bezier(0, 0.01, 0, 1), visibility 0s 0.4s;
-}
-.highlight:hover:after {
-  transform: scaleX(1);
-  visibility: visible;
-  transform-origin: left;
-  transition: 0.2s transform cubic-bezier(0, 0.01, 0, 1);
-}
-
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
@@ -1091,6 +1065,7 @@ button:focus {
 
 #trkx-header #cs-header {
   background-image: url("trkx-imgs/blue-truck-mountains.jpg");
+  background-position-y: -230px;
 }
 
 .sec-container-lrg .col-2 {
